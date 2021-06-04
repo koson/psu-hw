@@ -1,0 +1,3032 @@
+(kicad_sch (version 20210406) (generator eeschema)
+
+  (uuid 323d825d-c2ac-4e34-acb3-438e82678c2a)
+
+  (paper "A4")
+
+  (title_block
+    (title "EEZ PSU consolidated")
+    (rev "r5B13a")
+    (comment 4 "Root schematic")
+  )
+
+  (lib_symbols
+  )
+
+
+  (text "Licensed under the TAPR Open Hardware License (www.tapr.org/OHL)"
+    (at 26.67 173.99 0)
+    (effects (font (size 1.4986 1.4986)) (justify left bottom))
+    (uuid ad54e599-8e4b-44a0-abfc-ff70b207a580)
+  )
+  (text "More info at http://www.envox.hr/eez" (at 26.67 176.53 0)
+    (effects (font (size 1.4986 1.4986)) (justify left bottom))
+    (uuid 3ff7485a-6f7a-4e56-9597-0f26ea66e318)
+  )
+  (text "Repository: https://github.com/eez-open" (at 26.67 179.07 0)
+    (effects (font (size 1.4986 1.4986)) (justify left bottom))
+    (uuid c4308913-c7c9-4b28-90f8-798485798f8d)
+  )
+  (text "This is the Root schematic!" (at 179.07 130.81 0)
+    (effects (font (size 2.9972 2.9972)) (justify left bottom))
+    (uuid 3d885574-a340-40bb-a7a2-1baea838fe95)
+  )
+
+  (sheet (at 25.4 76.2) (size 12.7 3.81) (fields_autoplaced)
+    (stroke (width 0) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 00000000-0000-0000-0000-00005b870419)
+    (property "Sheet name" "AC soft-start, +5V power" (id 0) (at 25.4 75.5645 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "AC_soft-start,_+5V_power.kicad_sch" (id 1) (at 25.4 80.5185 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 76.2 25.4) (size 12.7 3.81) (fields_autoplaced)
+    (stroke (width 0) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 00000000-0000-0000-0000-00005b86f281)
+    (property "Sheet name" "Bias power" (id 0) (at 76.2 24.7645 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "Bias_power.kicad_sch" (id 1) (at 76.2 29.7185 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 127 76.2) (size 12.7 3.81) (fields_autoplaced)
+    (stroke (width 0) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 00000000-0000-0000-0000-00005b870baa)
+    (property "Sheet name" "Binding posts relays, LED driver" (id 0) (at 127 75.5645 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "Binding_posts_relays,_LED_driver.kicad_sch" (id 1) (at 127 80.5185 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 228.6 25.4) (size 12.7 3.81) (fields_autoplaced)
+    (stroke (width 0) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 00000000-0000-0000-0000-00005b870139)
+    (property "Sheet name" "CC/CV, Remote sense protection" (id 0) (at 228.6 24.7645 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "CC%2fCV,_Remote_sense_protection.kicad_sch" (id 1) (at 228.6 29.7185 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 177.8 25.4) (size 12.7 3.81) (fields_autoplaced)
+    (stroke (width 0) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 00000000-0000-0000-0000-00005b86fcc4)
+    (property "Sheet name" "Digital control, voltage reference" (id 0) (at 177.8 24.7645 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "Digital_control,_voltage_reference.kicad_sch" (id 1) (at 177.8 29.7185 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 76.2 127) (size 12.7 3.81) (fields_autoplaced)
+    (stroke (width 0) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 00000000-0000-0000-0000-00005b8722d3)
+    (property "Sheet name" "EEZ PSU consolidated r5B13a_12" (id 0) (at 76.2 126.3645 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "EEZ_PSU_consolidated_r5B13a_12.kicad_sch" (id 1) (at 76.2 131.3185 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 76.2 76.2) (size 12.7 3.81) (fields_autoplaced)
+    (stroke (width 0) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 00000000-0000-0000-0000-00005b870870)
+    (property "Sheet name" "Ethernet, USB, Fan" (id 0) (at 76.2 75.5645 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "Ethernet,_USB,_Fan.kicad_sch" (id 1) (at 76.2 80.5185 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 177.8 76.2) (size 12.7 3.81) (fields_autoplaced)
+    (stroke (width 0) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 00000000-0000-0000-0000-00005b8711c3)
+    (property "Sheet name" "Isolators, Arduino" (id 0) (at 177.8 75.5645 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "Isolators,_Arduino.kicad_sch" (id 1) (at 177.8 80.5185 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 127 25.4) (size 12.7 3.81) (fields_autoplaced)
+    (stroke (width 0) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 00000000-0000-0000-0000-00005b86f516)
+    (property "Sheet name" "Post-regulator" (id 0) (at 127 24.7645 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "Post-regulator.kicad_sch" (id 1) (at 127 29.7185 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 25.4 25.4) (size 12.7 3.81) (fields_autoplaced)
+    (stroke (width 0) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 00000000-0000-0000-0000-00005b86eea2)
+    (property "Sheet name" "Power pre-regulator" (id 0) (at 25.4 24.7645 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "Power_pre-regulator.kicad_sch" (id 1) (at 25.4 29.7185 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 25.4 127) (size 12.7 3.81) (fields_autoplaced)
+    (stroke (width 0) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 00000000-0000-0000-0000-00005b871cd8)
+    (property "Sheet name" "Reset, load temp, digital input" (id 0) (at 25.4 126.3645 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "Reset,_load_temp,_digital_input.kicad_sch" (id 1) (at 25.4 131.3185 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 228.6 76.2) (size 12.7 3.81) (fields_autoplaced)
+    (stroke (width 0) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 00000000-0000-0000-0000-00005b871692)
+    (property "Sheet name" "SPI peripherals, TFT display" (id 0) (at 228.6 75.5645 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "SPI_peripherals,_TFT_display.kicad_sch" (id 1) (at 228.6 80.5185 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+    (path "/00000000-0000-0000-0000-00005b86eea2/" (page "2"))
+    (path "/00000000-0000-0000-0000-00005b870419/" (page "3"))
+    (path "/00000000-0000-0000-0000-00005b871cd8/" (page "4"))
+    (path "/00000000-0000-0000-0000-00005b86f281/" (page "5"))
+    (path "/00000000-0000-0000-0000-00005b870870/" (page "6"))
+    (path "/00000000-0000-0000-0000-00005b8722d3/" (page "7"))
+    (path "/00000000-0000-0000-0000-00005b86f516/" (page "8"))
+    (path "/00000000-0000-0000-0000-00005b870baa/" (page "9"))
+    (path "/00000000-0000-0000-0000-00005b86fcc4/" (page "10"))
+    (path "/00000000-0000-0000-0000-00005b8711c3/" (page "11"))
+    (path "/00000000-0000-0000-0000-00005b870139/" (page "12"))
+    (path "/00000000-0000-0000-0000-00005b871692/" (page "13"))
+  )
+
+  (symbol_instances
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-0000cc96be83"
+      (reference "#FRAME1") (unit 1) (value "DINA4_L") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-000061c20f05"
+      (reference "#SUPPLY015") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-00007ff4310d"
+      (reference "#SUPPLY028") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-000090cc8d06"
+      (reference "#SUPPLY029") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-0000f8ee9000"
+      (reference "#SUPPLY037") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-0000439f81e9"
+      (reference "#SUPPLY038") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-00009b347b6d"
+      (reference "#SUPPLY0115") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-000012bf0275"
+      (reference "C1") (unit 1) (value "4n7/100V") (footprint "EEZ PSU consolidated r5B13a:C1206")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-0000763bb0c5"
+      (reference "C2") (unit 1) (value "4n7/100V") (footprint "EEZ PSU consolidated r5B13a:C1206")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-0000a7483ad5"
+      (reference "C3") (unit 1) (value "50SVPF18M") (footprint "EEZ PSU consolidated r5B13a:CAPAE830X650N")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-0000bd10b666"
+      (reference "C4") (unit 1) (value "4n7/100V") (footprint "EEZ PSU consolidated r5B13a:C1206")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-0000000a48f2"
+      (reference "C5") (unit 1) (value "4u7/100V") (footprint "EEZ PSU consolidated r5B13a:C1210")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-0000afab1000"
+      (reference "C6") (unit 1) (value "4u7/100V") (footprint "EEZ PSU consolidated r5B13a:C1210")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-0000541178fc"
+      (reference "C7") (unit 1) (value "470n") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-0000ea77a757"
+      (reference "C8") (unit 1) (value "1u/100V") (footprint "EEZ PSU consolidated r5B13a:C1206")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-000093f3fa2a"
+      (reference "C9") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-00003100fcdb"
+      (reference "C10") (unit 1) (value "10u") (footprint "EEZ PSU consolidated r5B13a:C1210")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-00005f67c8af"
+      (reference "C11") (unit 1) (value "1u") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-0000dda156a1"
+      (reference "C12") (unit 1) (value "n.c.") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-00001c4fc955"
+      (reference "C13") (unit 1) (value "EEEFK1H470P") (footprint "EEZ PSU consolidated r5B13a:CAPAE830X1050N")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-0000b8e8e18d"
+      (reference "C14") (unit 1) (value "470p") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-0000707de72d"
+      (reference "C15") (unit 1) (value "EEEFK1J101P") (footprint "EEZ PSU consolidated r5B13a:PANASONIC_F")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-0000020271e7"
+      (reference "C16") (unit 1) (value "10u") (footprint "EEZ PSU consolidated r5B13a:C1210")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-00009029b192"
+      (reference "C17") (unit 1) (value "120p") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-000099c619d6"
+      (reference "C18") (unit 1) (value "4n7") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-00009b450b35"
+      (reference "C19") (unit 1) (value "470p") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-00006183c455"
+      (reference "D1") (unit 1) (value "STPS15H100") (footprint "EEZ PSU consolidated r5B13a:TO252")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-0000753aa296"
+      (reference "D2") (unit 1) (value "BAS316") (footprint "EEZ PSU consolidated r5B13a:SOD323-R")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-0000dcdc82bf"
+      (reference "FM1") (unit 1) (value "FIDUCIAL_2") (footprint "EEZ PSU consolidated r5B13a:FIDUCIAL_DUAL")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-00008bca1f73"
+      (reference "FM2") (unit 1) (value "FIDUCIAL_2") (footprint "EEZ PSU consolidated r5B13a:FIDUCIAL_DUAL")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-000028002d22"
+      (reference "IC1") (unit 1) (value "LTC3864EMSE#PBF") (footprint "EEZ PSU consolidated r5B13a:LTC_05-08-1666")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-00000b60073d"
+      (reference "JP1") (unit 1) (value "JP3-CUT") (footprint "EEZ PSU consolidated r5B13a:JP3-CUT")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-0000abff23e9"
+      (reference "L1") (unit 1) (value "RN112-4-02") (footprint "EEZ PSU consolidated r5B13a:RN112")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-0000abff23e5"
+      (reference "L1") (unit 2) (value "RN112-4-02") (footprint "EEZ PSU consolidated r5B13a:RN112")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-00000840620c"
+      (reference "L2") (unit 1) (value "7443551331") (footprint "EEZ PSU consolidated r5B13a:WE-HCI_1350_1365")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-00000b156c27"
+      (reference "L3") (unit 1) (value "IHLP2020CZER3R3M11") (footprint "EEZ PSU consolidated r5B13a:IHLP-2020BZ-11")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-0000f9cafa06"
+      (reference "L4") (unit 1) (value "IHLP2020CZER3R3M11") (footprint "EEZ PSU consolidated r5B13a:IHLP-2020BZ-11")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-0000655a7cc6"
+      (reference "NTC1") (unit 1) (value "10K/Beta:3570K") (footprint "EEZ PSU consolidated r5B13a:R_0204_5+0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-000034f7d08b"
+      (reference "Q1") (unit 1) (value "IRFR5305") (footprint "EEZ PSU consolidated r5B13a:TO229P990X239-3N")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-00009695eda1"
+      (reference "Q2") (unit 1) (value "MMBT5401") (footprint "EEZ PSU consolidated r5B13a:SOT23-BEC")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-00009a1c1eba"
+      (reference "Q3") (unit 1) (value "2N7002") (footprint "EEZ PSU consolidated r5B13a:SOT103P240X110-3N")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-0000910cefcb"
+      (reference "R2") (unit 1) (value "n.c.") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-00002a684572"
+      (reference "R3") (unit 1) (value "10K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-00003351d600"
+      (reference "R4") (unit 1) (value "R010/2W") (footprint "EEZ PSU consolidated r5B13a:R2512")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-00004aff4a0d"
+      (reference "R5") (unit 1) (value "47K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-0000c3b56805"
+      (reference "R6") (unit 1) (value "1R") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-0000ce756263"
+      (reference "R7") (unit 1) (value "100R") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-00001338a13a"
+      (reference "R8") (unit 1) (value "100R") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-0000ca4910a9"
+      (reference "R9") (unit 1) (value "10R") (footprint "EEZ PSU consolidated r5B13a:R1206")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-000041718522"
+      (reference "R10") (unit 1) (value "10K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-0000b75ff5df"
+      (reference "R11") (unit 1) (value "10K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-00000c5252b0"
+      (reference "R12") (unit 1) (value "100K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-0000afd5fb88"
+      (reference "R13") (unit 1) (value "316K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-000046e6f5c8"
+      (reference "R14") (unit 1) (value "n.c.") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-000018909564"
+      (reference "R15") (unit 1) (value "100K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-0000003e38ae"
+      (reference "R16") (unit 1) (value "4K7") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-000010015477"
+      (reference "SH1") (unit 1) (value "Pgnd to Pout- short") (footprint "EEZ PSU consolidated r5B13a:SHORT_NOHOLE")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-00005abd8682"
+      (reference "SH2") (unit 1) (value "Sgnd to Pgnd short") (footprint "EEZ PSU consolidated r5B13a:SHORT_NOHOLE")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-00009dc1dc97"
+      (reference "X1") (unit 1) (value "39-30-1039") (footprint "EEZ PSU consolidated r5B13a:MINIFIT_39301039")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-00009dc1dc9b"
+      (reference "X1") (unit 2) (value "39-30-1039") (footprint "EEZ PSU consolidated r5B13a:MINIFIT_39301039")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-00009dc1dc9f"
+      (reference "X1") (unit 3) (value "39-30-1039") (footprint "EEZ PSU consolidated r5B13a:MINIFIT_39301039")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-0000ee6a8c6b"
+      (reference "X2") (unit 13) (value "SSW-113-02-T-D-RA") (footprint "EEZ PSU consolidated r5B13a:SSW-113-02-T-D-RA")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-0000ee6a8c63"
+      (reference "X2") (unit 15) (value "SSW-113-02-T-D-RA") (footprint "EEZ PSU consolidated r5B13a:SSW-113-02-T-D-RA")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-0000ee6a8c1f"
+      (reference "X2") (unit 16) (value "SSW-113-02-T-D-RA") (footprint "EEZ PSU consolidated r5B13a:SSW-113-02-T-D-RA")
+    )
+    (path "/00000000-0000-0000-0000-00005b86eea2/00000000-0000-0000-0000-0000376526c0"
+      (reference "ZD1") (unit 1) (value "SMAJ51A") (footprint "EEZ PSU consolidated r5B13a:DO214AA")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000c2225a64"
+      (reference "#12V_RET0101") (unit 1) (value "0V") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-00005b1aae1e"
+      (reference "#FRAME3") (unit 1) (value "DINA4_L") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-00004d46f757"
+      (reference "#P+011") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000da826a5a"
+      (reference "#P+016") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000c06b3c1e"
+      (reference "#P+017") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000b77a050a"
+      (reference "#SUPPLY041") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000e1a79452"
+      (reference "#SUPPLY045") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-000008868301"
+      (reference "#SUPPLY051") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-00001d042b72"
+      (reference "#SUPPLY0122") (unit 1) (value "0V") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-000013c98fc3"
+      (reference "#SUPPLY0124") (unit 1) (value "0V") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000c8f19d75"
+      (reference "#SUPPLY0125") (unit 1) (value "0V") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-00009d2e4ebb"
+      (reference "C75") (unit 1) (value "6n8 (X1)") (footprint "EEZ PSU consolidated r5B13a:C102-064X133")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-00006a422362"
+      (reference "C76") (unit 1) (value "47n/400V") (footprint "EEZ PSU consolidated r5B13a:C075-052X106")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-00007277bee9"
+      (reference "C77") (unit 1) (value "47u") (footprint "EEZ PSU consolidated r5B13a:CAPAE660X610N")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000e4113a87"
+      (reference "C78") (unit 1) (value "220u") (footprint "EEZ PSU consolidated r5B13a:CAPAE660X610N")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000a167eeb6"
+      (reference "C79") (unit 1) (value "47n") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000eb6b3c9d"
+      (reference "C80") (unit 1) (value "47u") (footprint "EEZ PSU consolidated r5B13a:CAPAE660X610N")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000a4285309"
+      (reference "D11") (unit 1) (value "SKL16") (footprint "EEZ PSU consolidated r5B13a:SOD123")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000a2db92e8"
+      (reference "FM3") (unit 1) (value "FIDUCIAL_2") (footprint "EEZ PSU consolidated r5B13a:FIDUCIAL_DUAL")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000f73411f7"
+      (reference "FM4") (unit 1) (value "FIDUCIAL_2") (footprint "EEZ PSU consolidated r5B13a:FIDUCIAL_DUAL")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000522e1805"
+      (reference "KK1") (unit 1) (value "SK 145/37,5") (footprint "EEZ PSU consolidated r5B13a:SK145")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-000050948d1e"
+      (reference "L5") (unit 1) (value "470u") (footprint "EEZ PSU consolidated r5B13a:DE0704")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-000002324650"
+      (reference "OK1") (unit 1) (value "MOC3052") (footprint "EEZ PSU consolidated r5B13a:DIL6-SMD")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-000094b9d4cb"
+      (reference "OK2") (unit 1) (value "MOC3062") (footprint "EEZ PSU consolidated r5B13a:DIL6-SMD")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000e70ef526"
+      (reference "OK3") (unit 1) (value "HCPL-181") (footprint "EEZ PSU consolidated r5B13a:HCPL-181")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000502154e6"
+      (reference "OK4") (unit 1) (value "HCPL-181") (footprint "EEZ PSU consolidated r5B13a:HCPL-181")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-00009e148865"
+      (reference "Q21") (unit 1) (value "BTA26-600") (footprint "EEZ PSU consolidated r5B13a:TOP3S-1")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-000039112899"
+      (reference "Q22") (unit 1) (value "BTA26-600") (footprint "EEZ PSU consolidated r5B13a:TOP3S-1")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000c50b955c"
+      (reference "Q23") (unit 1) (value "IRLL2705PBF") (footprint "EEZ PSU consolidated r5B13a:SOT223")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000c1c09424"
+      (reference "Q24") (unit 1) (value "2N7002") (footprint "EEZ PSU consolidated r5B13a:SOT103P240X110-3N")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000065d7068"
+      (reference "R103") (unit 1) (value "18-22R/7W") (footprint "EEZ PSU consolidated r5B13a:R_0913")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000150225e3"
+      (reference "R104") (unit 1) (value "330R/2W") (footprint "EEZ PSU consolidated r5B13a:R2512")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-00002bfc61d2"
+      (reference "R105") (unit 1) (value "330R/2W") (footprint "EEZ PSU consolidated r5B13a:R2512")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-000009da4735"
+      (reference "R106") (unit 1) (value "2K2") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000fe7f47ee"
+      (reference "R107") (unit 1) (value "2K2") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000ae52f84a"
+      (reference "R108") (unit 1) (value "330R/2W") (footprint "EEZ PSU consolidated r5B13a:R2512")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000284c4c46"
+      (reference "R109") (unit 1) (value "49R9") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000368beef4"
+      (reference "R110") (unit 1) (value "220R") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-00000d50473b"
+      (reference "R111") (unit 1) (value "330R/2W") (footprint "EEZ PSU consolidated r5B13a:R2512")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000771c899a"
+      (reference "R112") (unit 1) (value "49R9") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000ab2e56e3"
+      (reference "R113") (unit 1) (value "220R") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-00007929686e"
+      (reference "R114") (unit 1) (value "1K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000bdc3ffda"
+      (reference "R115") (unit 1) (value "5K6") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000ee95bb55"
+      (reference "R116") (unit 1) (value "100R") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000f8e7629f"
+      (reference "R117") (unit 1) (value "5K6") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000b867c28c"
+      (reference "R118") (unit 1) (value "220R") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000a39918b3"
+      (reference "R119") (unit 1) (value "2K2") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-000067be43b4"
+      (reference "R120") (unit 1) (value "1K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000f8c5d3fe"
+      (reference "R121") (unit 1) (value "10K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000a6d3298e"
+      (reference "R122") (unit 1) (value "10K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000bdd41d1a"
+      (reference "SAR1") (unit 1) (value "CG2-470L") (footprint "EEZ PSU consolidated r5B13a:SAR")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000f6d25935"
+      (reference "TR1") (unit 1) (value "VTX-214-005-0512") (footprint "EEZ PSU consolidated r5B13a:PCB_ACDC_VTX_5W_DUAL")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000e8a8b8ef"
+      (reference "VAR1") (unit 1) (value "ERZE14A431") (footprint "EEZ PSU consolidated r5B13a:VARISTOR")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000936ba615"
+      (reference "VAR2") (unit 1) (value "ERZE14A431") (footprint "EEZ PSU consolidated r5B13a:VARISTOR")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-00003628f37c"
+      (reference "X3") (unit 1) (value "39303055") (footprint "EEZ PSU consolidated r5B13a:MINIFIT_6659-5")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-00003628f370"
+      (reference "X3") (unit 2) (value "39303055") (footprint "EEZ PSU consolidated r5B13a:MINIFIT_6659-5")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-00003628f374"
+      (reference "X3") (unit 3) (value "39303055") (footprint "EEZ PSU consolidated r5B13a:MINIFIT_6659-5")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-00003628f368"
+      (reference "X3") (unit 4) (value "39303055") (footprint "EEZ PSU consolidated r5B13a:MINIFIT_6659-5")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-00003628f36c"
+      (reference "X3") (unit 5) (value "39303055") (footprint "EEZ PSU consolidated r5B13a:MINIFIT_6659-5")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-000038d8100c"
+      (reference "X4") (unit 1) (value "22-23-2031") (footprint "EEZ PSU consolidated r5B13a:22-23-2031")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-000038d81000"
+      (reference "X4") (unit 2) (value "22-23-2031") (footprint "EEZ PSU consolidated r5B13a:22-23-2031")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-000038d81004"
+      (reference "X4") (unit 3) (value "22-23-2031") (footprint "EEZ PSU consolidated r5B13a:22-23-2031")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000f6666f73"
+      (reference "X5") (unit 1) (value "09185067324") (footprint "EEZ PSU consolidated r5B13a:IDC-10PIN")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000f6666f7f"
+      (reference "X5") (unit 2) (value "09185067324") (footprint "EEZ PSU consolidated r5B13a:IDC-10PIN")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000f6666f7b"
+      (reference "X5") (unit 3) (value "09185067324") (footprint "EEZ PSU consolidated r5B13a:IDC-10PIN")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000f6666f67"
+      (reference "X5") (unit 4) (value "09185067324") (footprint "EEZ PSU consolidated r5B13a:IDC-10PIN")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000f6666f63"
+      (reference "X5") (unit 5) (value "09185067324") (footprint "EEZ PSU consolidated r5B13a:IDC-10PIN")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000f6666f6f"
+      (reference "X5") (unit 6) (value "09185067324") (footprint "EEZ PSU consolidated r5B13a:IDC-10PIN")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000f6666f57"
+      (reference "X5") (unit 8) (value "09185067324") (footprint "EEZ PSU consolidated r5B13a:IDC-10PIN")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000f6666f53"
+      (reference "X5") (unit 9) (value "09185067324") (footprint "EEZ PSU consolidated r5B13a:IDC-10PIN")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-0000f6666f5f"
+      (reference "X5") (unit 10) (value "09185067324") (footprint "EEZ PSU consolidated r5B13a:IDC-10PIN")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-00004bc96379"
+      (reference "ZD4") (unit 1) (value "1.5KE400CA") (footprint "EEZ PSU consolidated r5B13a:DO201-BIDIR")
+    )
+    (path "/00000000-0000-0000-0000-00005b870419/00000000-0000-0000-0000-00005ea163c9"
+      (reference "ZD5") (unit 1) (value "1.5KE400CA") (footprint "EEZ PSU consolidated r5B13a:DO201-BIDIR")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000776068a4"
+      (reference "#+3V06") (unit 1) (value "+3V3") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000a67731b0"
+      (reference "#+3V07") (unit 1) (value "+3V3") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000a80c603b"
+      (reference "#+3V010") (unit 1) (value "+3V3") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000a89f4fa3"
+      (reference "#+3V011") (unit 1) (value "+3V3") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-000034cff32a"
+      (reference "#+3V012") (unit 1) (value "+3V3") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-000036055abc"
+      (reference "#+3V019") (unit 1) (value "+3V3") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000484aeed0"
+      (reference "#+3V021") (unit 1) (value "+3V3") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000f72700c4"
+      (reference "#+3V022") (unit 1) (value "+3V3") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-000064815aa6"
+      (reference "#FRAME11") (unit 1) (value "DINA4_L") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-00004777b23a"
+      (reference "#P+026") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-000014d11ba1"
+      (reference "#SUPPLY046") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000a1eb79b2"
+      (reference "#SUPPLY089") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000e84d5460"
+      (reference "#SUPPLY090") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000d9ffdbbf"
+      (reference "#SUPPLY092") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000f4717e68"
+      (reference "#SUPPLY096") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-00006c37ea40"
+      (reference "#SUPPLY099") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-000048481f40"
+      (reference "#SUPPLY0100") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000dce742c6"
+      (reference "#SUPPLY0103") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000e4901599"
+      (reference "#SUPPLY0104") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000bf173f54"
+      (reference "#SUPPLY0105") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000ad358abe"
+      (reference "#SUPPLY0112") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000401f8e60"
+      (reference "#SUPPLY0113") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000120664e9"
+      (reference "#SUPPLY0114") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000c4e28e65"
+      (reference "#SUPPLY0118") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-00009e8333ea"
+      (reference "#SUPPLY0119") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000417bea0f"
+      (reference "#SUPPLY0120") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-00001ff3a519"
+      (reference "#SUPPLY0121") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000af4866d0"
+      (reference "C132") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-00009f22c80d"
+      (reference "C133") (unit 1) (value "47n") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000e49f44b8"
+      (reference "C134") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-00004367aaa9"
+      (reference "C135") (unit 1) (value "10n") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-00005f2803e5"
+      (reference "C136") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000bba0131d"
+      (reference "C137") (unit 1) (value "10n") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-00002f5fd116"
+      (reference "C138") (unit 1) (value "10n") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-00007021623c"
+      (reference "C139") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-00009df23c2e"
+      (reference "C140") (unit 1) (value "47n") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000264a421d"
+      (reference "C141") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-000099722ca6"
+      (reference "C156") (unit 1) (value "1u") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-00004e22a259"
+      (reference "D19") (unit 1) (value "BAT54S") (footprint "EEZ PSU consolidated r5B13a:SOT23")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000553a3d11"
+      (reference "D20") (unit 1) (value "SKL16") (footprint "EEZ PSU consolidated r5B13a:SOD123")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000cdc926c0"
+      (reference "D21") (unit 1) (value "BAS316") (footprint "EEZ PSU consolidated r5B13a:SOD323-R")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000268e53c9"
+      (reference "F1") (unit 1) (value "50mA") (footprint "EEZ PSU consolidated r5B13a:F1210")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-00007f60fbd0"
+      (reference "FB7") (unit 1) (value "60R@100MHz") (footprint "EEZ PSU consolidated r5B13a:BEAD0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000eaff84eb"
+      (reference "IC27") (unit 1) (value "BC857BS") (footprint "EEZ PSU consolidated r5B13a:SOT65P210X110-6N")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000eaff84e7"
+      (reference "IC27") (unit 2) (value "BC857BS") (footprint "EEZ PSU consolidated r5B13a:SOT65P210X110-6N")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-000077eb61e3"
+      (reference "IC28") (unit 1) (value "TLC555") (footprint "EEZ PSU consolidated r5B13a:SOIC127P600X175-8N")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-000084f2ba7a"
+      (reference "IC29") (unit 1) (value "SN74LVC08APWR") (footprint "EEZ PSU consolidated r5B13a:SOP65P640X120-14N")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-000084f2ba76"
+      (reference "IC29") (unit 2) (value "SN74LVC08APWR") (footprint "EEZ PSU consolidated r5B13a:SOP65P640X120-14N")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-000084f2ba72"
+      (reference "IC29") (unit 3) (value "SN74LVC08APWR") (footprint "EEZ PSU consolidated r5B13a:SOP65P640X120-14N")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-000084f2ba6e"
+      (reference "IC29") (unit 4) (value "SN74LVC08APWR") (footprint "EEZ PSU consolidated r5B13a:SOP65P640X120-14N")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-000084f2ba6a"
+      (reference "IC29") (unit 5) (value "SN74LVC08APWR") (footprint "EEZ PSU consolidated r5B13a:SOP65P640X120-14N")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000a7df8caf"
+      (reference "IC30") (unit 1) (value "SN74LV1T34DBVR") (footprint "EEZ PSU consolidated r5B13a:SOT95P280X145-5N")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000a7df8ca3"
+      (reference "IC30") (unit 2) (value "SN74LV1T34DBVR") (footprint "EEZ PSU consolidated r5B13a:SOT95P280X145-5N")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000e590bb07"
+      (reference "IC31") (unit 1) (value "TPS3705-33D") (footprint "EEZ PSU consolidated r5B13a:SOIC127P600X175-8N")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000dc1ee19d"
+      (reference "IC32") (unit 1) (value "SN74LVC2G02DCTR") (footprint "EEZ PSU consolidated r5B13a:SOP65P400X130-8N")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000dc1ee191"
+      (reference "IC32") (unit 2) (value "SN74LVC2G02DCTR") (footprint "EEZ PSU consolidated r5B13a:SOP65P400X130-8N")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000dc1ee195"
+      (reference "IC32") (unit 3) (value "SN74LVC2G02DCTR") (footprint "EEZ PSU consolidated r5B13a:SOP65P400X130-8N")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-00006fc3a3a4"
+      (reference "OK5") (unit 1) (value "HCPL-181") (footprint "EEZ PSU consolidated r5B13a:HCPL-181")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000248dc63e"
+      (reference "OK6") (unit 1) (value "HCPL-181") (footprint "EEZ PSU consolidated r5B13a:HCPL-181")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000ca0ee761"
+      (reference "Q32") (unit 1) (value "2N7002") (footprint "EEZ PSU consolidated r5B13a:SOT103P240X110-3N")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-00002f939db1"
+      (reference "Q33") (unit 1) (value "2N7002") (footprint "EEZ PSU consolidated r5B13a:SOT103P240X110-3N")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000a164c48c"
+      (reference "R150") (unit 1) (value "180R") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000d044c37a"
+      (reference "R151") (unit 1) (value "1K8") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-00001e91899a"
+      (reference "R152") (unit 1) (value "750R") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-000001e624b3"
+      (reference "R153") (unit 1) (value "750R") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-000050cbc051"
+      (reference "R154") (unit 1) (value "47K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000c4f1527b"
+      (reference "R155") (unit 1) (value "100R") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000e51b62ce"
+      (reference "R156") (unit 1) (value "4K7") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-00002c88bb04"
+      (reference "R157") (unit 1) (value "10K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000e7e51ea9"
+      (reference "R158") (unit 1) (value "47K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000474f5bbe"
+      (reference "R159") (unit 1) (value "4K7") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-000075988e61"
+      (reference "R160") (unit 1) (value "100K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-00002a1ad30e"
+      (reference "R161") (unit 1) (value "4K7") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-000041e380be"
+      (reference "R162") (unit 1) (value "4K7") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-00006fb8209d"
+      (reference "R163") (unit 1) (value "1K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-000091acc27c"
+      (reference "R164") (unit 1) (value "1K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000dd49a7ac"
+      (reference "R165") (unit 1) (value "10K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-00008f3c6dce"
+      (reference "R166") (unit 1) (value "220R") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-00005ab57c08"
+      (reference "R177") (unit 1) (value "220R") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-00003a504cb3"
+      (reference "R178") (unit 1) (value "100K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-00009e8cec31"
+      (reference "SW2") (unit 1) (value "PEC12R-4225F-S0024") (footprint "EEZ PSU consolidated r5B13a:EC12E_SW")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-00009e8cec3d"
+      (reference "SW2") (unit 2) (value "PEC12R-4225F-S0024") (footprint "EEZ PSU consolidated r5B13a:EC12E_SW")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000aadfe4dd"
+      (reference "SW3") (unit 1) (value "1301.9316") (footprint "EEZ PSU consolidated r5B13a:TACTM-6XN")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000756a31ae"
+      (reference "X12") (unit 1) (value "MC000006") (footprint "EEZ PSU consolidated r5B13a:MC000006_MIRROR")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000756a31a2"
+      (reference "X12") (unit 2) (value "MC000006") (footprint "EEZ PSU consolidated r5B13a:MC000006_MIRROR")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000756a31b2"
+      (reference "X12") (unit 6) (value "MC000006") (footprint "EEZ PSU consolidated r5B13a:MC000006_MIRROR")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000756a31b6"
+      (reference "X12") (unit 7) (value "MC000006") (footprint "EEZ PSU consolidated r5B13a:MC000006_MIRROR")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000756a318a"
+      (reference "X12") (unit 8) (value "MC000006") (footprint "EEZ PSU consolidated r5B13a:MC000006_MIRROR")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-000089f53a2e"
+      (reference "X13") (unit 11) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-000089f53a3e"
+      (reference "X13") (unit 15) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000e29d80a2"
+      (reference "X14") (unit 1) (value "MC000006") (footprint "EEZ PSU consolidated r5B13a:MC000006_MIRROR")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000e29d80ae"
+      (reference "X14") (unit 2) (value "MC000006") (footprint "EEZ PSU consolidated r5B13a:MC000006_MIRROR")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000e29d80ba"
+      (reference "X14") (unit 7) (value "MC000006") (footprint "EEZ PSU consolidated r5B13a:MC000006_MIRROR")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000e29d8086"
+      (reference "X14") (unit 8) (value "MC000006") (footprint "EEZ PSU consolidated r5B13a:MC000006_MIRROR")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000a188a081"
+      (reference "X15") (unit 11) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000a188a091"
+      (reference "X15") (unit 15) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000bb9d6a26"
+      (reference "X16") (unit 7) (value "09185067324") (footprint "EEZ PSU consolidated r5B13a:IDC-10PIN")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-00007b818daf"
+      (reference "ZD11") (unit 1) (value "SMAJ18A") (footprint "EEZ PSU consolidated r5B13a:DO214AC")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-00003ae115bd"
+      (reference "ZD12") (unit 1) (value "SMAJ18A") (footprint "EEZ PSU consolidated r5B13a:DO214AC")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-00003dfb0441"
+      (reference "ZD13") (unit 1) (value "4V3") (footprint "EEZ PSU consolidated r5B13a:MINIMELF")
+    )
+    (path "/00000000-0000-0000-0000-00005b871cd8/00000000-0000-0000-0000-0000723e3b3d"
+      (reference "ZD14") (unit 1) (value "SMAJ18A") (footprint "EEZ PSU consolidated r5B13a:DO214AC")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f281/00000000-0000-0000-0000-00002df73003"
+      (reference "#FRAME7") (unit 1) (value "DINA4_L") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f281/00000000-0000-0000-0000-00004b6cf0c8"
+      (reference "#P+06") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f281/00000000-0000-0000-0000-00006665561a"
+      (reference "#P+010") (unit 1) (value "V+") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f281/00000000-0000-0000-0000-000032ded4c8"
+      (reference "#SUPPLY020") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f281/00000000-0000-0000-0000-000075d3cfdc"
+      (reference "#SUPPLY021") (unit 1) (value "-12V") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f281/00000000-0000-0000-0000-0000b29b04a9"
+      (reference "#SUPPLY023") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f281/00000000-0000-0000-0000-000040a609a7"
+      (reference "#SUPPLY030") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f281/00000000-0000-0000-0000-0000dcfcc822"
+      (reference "#SUPPLY040") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f281/00000000-0000-0000-0000-00003a9bf0bf"
+      (reference "#SUPPLY043") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f281/00000000-0000-0000-0000-000037b5ea40"
+      (reference "#SUPPLY044") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f281/00000000-0000-0000-0000-0000a22a1987"
+      (reference "#SUPPLY063") (unit 1) (value "V-") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f281/00000000-0000-0000-0000-0000ba84c5ba"
+      (reference "#SUPPLY067") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f281/00000000-0000-0000-0000-0000af52b793"
+      (reference "#SUPPLY0101") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f281/00000000-0000-0000-0000-0000dbfb5306"
+      (reference "#SUPPLY0123") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f281/00000000-0000-0000-0000-000006ace81a"
+      (reference "#SUPPLY0127") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f281/00000000-0000-0000-0000-000012bf572b"
+      (reference "C20") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f281/00000000-0000-0000-0000-0000c8f27f71"
+      (reference "C21") (unit 1) (value "4u7") (footprint "EEZ PSU consolidated r5B13a:EC1206")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f281/00000000-0000-0000-0000-00005a436ab8"
+      (reference "C22") (unit 1) (value "10u") (footprint "EEZ PSU consolidated r5B13a:C1210")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f281/00000000-0000-0000-0000-000069b575a3"
+      (reference "C23") (unit 1) (value "10u") (footprint "EEZ PSU consolidated r5B13a:EC1206")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f281/00000000-0000-0000-0000-00008d4de143"
+      (reference "C24") (unit 1) (value "10u") (footprint "EEZ PSU consolidated r5B13a:C1210")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f281/00000000-0000-0000-0000-00008d957147"
+      (reference "C25") (unit 1) (value "10n") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f281/00000000-0000-0000-0000-0000a0bf2441"
+      (reference "C26") (unit 1) (value "1u") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f281/00000000-0000-0000-0000-000014b3f210"
+      (reference "C27") (unit 1) (value "1uF/50V Tant.") (footprint "EEZ PSU consolidated r5B13a:C_6032-28R")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f281/00000000-0000-0000-0000-0000795ff24f"
+      (reference "C28") (unit 1) (value "10n") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f281/00000000-0000-0000-0000-000046b0858e"
+      (reference "C29") (unit 1) (value "10u") (footprint "EEZ PSU consolidated r5B13a:C1210")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f281/00000000-0000-0000-0000-0000ea6b2be4"
+      (reference "C30") (unit 1) (value "10u") (footprint "EEZ PSU consolidated r5B13a:C1210")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f281/00000000-0000-0000-0000-0000fdb3934f"
+      (reference "C31") (unit 1) (value "10u") (footprint "EEZ PSU consolidated r5B13a:EC1206")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f281/00000000-0000-0000-0000-0000bdb48bd5"
+      (reference "FB1") (unit 1) (value "60R@100MHz") (footprint "EEZ PSU consolidated r5B13a:BEAD0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f281/00000000-0000-0000-0000-0000bfa9910d"
+      (reference "FB2") (unit 1) (value "60R@100MHz") (footprint "EEZ PSU consolidated r5B13a:BEAD0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f281/00000000-0000-0000-0000-0000ffbf76da"
+      (reference "FB3") (unit 1) (value "60R@100MHz") (footprint "EEZ PSU consolidated r5B13a:BEAD0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f281/00000000-0000-0000-0000-0000bc34dc86"
+      (reference "IC2") (unit 1) (value "LP2951SO8") (footprint "EEZ PSU consolidated r5B13a:SOIC127P600X175-8N")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f281/00000000-0000-0000-0000-0000e7b5215d"
+      (reference "IC3") (unit 1) (value "TL783CKTTR") (footprint "EEZ PSU consolidated r5B13a:TO254P1524X483-4N")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f281/00000000-0000-0000-0000-00003c2c53a5"
+      (reference "IC4") (unit 1) (value "LTC3260EMSE#PBF") (footprint "EEZ PSU consolidated r5B13a:SOP50P490X110-17N")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f281/00000000-0000-0000-0000-00004d5e2bf5"
+      (reference "R17") (unit 1) (value "16K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f281/00000000-0000-0000-0000-0000a5719578"
+      (reference "R18") (unit 1) (value "5K1") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f281/00000000-0000-0000-0000-0000f581e55b"
+      (reference "R19") (unit 1) (value "10K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f281/00000000-0000-0000-0000-0000932ad490"
+      (reference "R20") (unit 1) (value "316K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f281/00000000-0000-0000-0000-00008a536b23"
+      (reference "R21") (unit 1) (value "220R") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f281/00000000-0000-0000-0000-000052c74efb"
+      (reference "R22") (unit 1) (value "100K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f281/00000000-0000-0000-0000-0000acaac8e2"
+      (reference "R23") (unit 1) (value "100K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f281/00000000-0000-0000-0000-0000f9a5defa"
+      (reference "R24") (unit 1) (value "1K8") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f281/00000000-0000-0000-0000-0000337ef62c"
+      (reference "R25") (unit 1) (value "316K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f281/00000000-0000-0000-0000-00004178b1da"
+      (reference "ZD16") (unit 1) (value "PDZ5.6B") (footprint "EEZ PSU consolidated r5B13a:SOD323-W")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-00001767a313"
+      (reference "#FRAME6") (unit 1) (value "DINA4_L") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-0000c5fbb535"
+      (reference "#P+014") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-00002b0bc8ea"
+      (reference "#P+019") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-0000b65b4b36"
+      (reference "#SUPPLY048") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-0000aa952887"
+      (reference "#SUPPLY052") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-00003e2c5da4"
+      (reference "#SUPPLY054") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-0000e45f0719"
+      (reference "#SUPPLY066") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-0000fef5f493"
+      (reference "C81") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-0000f8a07df4"
+      (reference "C82") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-0000c0a7abda"
+      (reference "C83") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-0000249f87ab"
+      (reference "C84") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-000000eb8535"
+      (reference "C85") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-0000cf94c26f"
+      (reference "D12") (unit 1) (value "BAS316") (footprint "EEZ PSU consolidated r5B13a:SOD323-W")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-0000abda1c34"
+      (reference "FB4") (unit 1) (value "60R@100MHz") (footprint "EEZ PSU consolidated r5B13a:BEAD0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-00001f860f62"
+      (reference "FB5") (unit 1) (value "60R@100MHz") (footprint "EEZ PSU consolidated r5B13a:BEAD0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-000019fb1623"
+      (reference "FB6") (unit 1) (value "60R@100MHz") (footprint "EEZ PSU consolidated r5B13a:BEAD0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-0000b577e39f"
+      (reference "IC15") (unit 1) (value "TPD4E002DRL") (footprint "EEZ PSU consolidated r5B13a:DRL5")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-0000c0e1bd3a"
+      (reference "IC16") (unit 1) (value "TPD2E001DZDR") (footprint "EEZ PSU consolidated r5B13a:SOP192P292X122-4N")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-00002b3093f6"
+      (reference "IC17") (unit 1) (value "ADUM3160BRWZ") (footprint "EEZ PSU consolidated r5B13a:SOIC-16W")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-00006d2e4931"
+      (reference "JP9") (unit 1) (value "ZL303-03P") (footprint "EEZ PSU consolidated r5B13a:ZL303-03P")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-000004432732"
+      (reference "JP10") (unit 1) (value "ZL303-03P") (footprint "EEZ PSU consolidated r5B13a:ZL303-03P")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-0000703699ae"
+      (reference "K_DOUT1") (unit 1) (value "RT424005") (footprint "EEZ PSU consolidated r5B13a:RT-C_016A5_ROUND")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-0000703699a2"
+      (reference "K_DOUT1") (unit 2) (value "RT424005") (footprint "EEZ PSU consolidated r5B13a:RT-C_016A5_ROUND")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-0000703699a6"
+      (reference "K_DOUT1") (unit 3) (value "RT424005") (footprint "EEZ PSU consolidated r5B13a:RT-C_016A5_ROUND")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-00002176b837"
+      (reference "Q25") (unit 1) (value "2N7002") (footprint "EEZ PSU consolidated r5B13a:SOT103P240X110-3N")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-0000c55e9459"
+      (reference "R123") (unit 1) (value "100K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-000089e41538"
+      (reference "R124") (unit 1) (value "22R") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-00005cdf71b1"
+      (reference "R125") (unit 1) (value "22R") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-0000e3ca4e1e"
+      (reference "VAR3") (unit 1) (value "ERZE11A431") (footprint "EEZ PSU consolidated r5B13a:VARISTOR_13MM")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-0000a5cdc9ad"
+      (reference "VAR4") (unit 1) (value "ERZE11A431") (footprint "EEZ PSU consolidated r5B13a:VARISTOR_13MM")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-0000f6666f6b"
+      (reference "X5") (unit 7) (value "09185067324") (footprint "EEZ PSU consolidated r5B13a:IDC-10PIN")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-00008eb02048"
+      (reference "X6") (unit 1) (value "CTB9300/3A + CTB92VG/3S ") (footprint "EEZ PSU consolidated r5B13a:WR-TBL_3-PIN")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-00008eb02044"
+      (reference "X6") (unit 2) (value "CTB9300/3A + CTB92VG/3S ") (footprint "EEZ PSU consolidated r5B13a:WR-TBL_3-PIN")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-00008eb02040"
+      (reference "X6") (unit 3) (value "CTB9300/3A + CTB92VG/3S ") (footprint "EEZ PSU consolidated r5B13a:WR-TBL_3-PIN")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-00009f533755"
+      (reference "X7") (unit 1) (value "Amphenol: LMJ2138812S0LOT6C or WE: 74990101210") (footprint "EEZ PSU consolidated r5B13a:RJ45-VERT")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-0000abf727ad"
+      (reference "X8") (unit 1) (value "826629-8") (footprint "EEZ PSU consolidated r5B13a:HEADER_8-PIN")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-0000abf727a1"
+      (reference "X8") (unit 2) (value "826629-8") (footprint "EEZ PSU consolidated r5B13a:HEADER_8-PIN")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-0000abf727b9"
+      (reference "X8") (unit 4) (value "826629-8") (footprint "EEZ PSU consolidated r5B13a:HEADER_8-PIN")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-0000abf727bd"
+      (reference "X8") (unit 5) (value "826629-8") (footprint "EEZ PSU consolidated r5B13a:HEADER_8-PIN")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-0000abf727b1"
+      (reference "X8") (unit 6) (value "826629-8") (footprint "EEZ PSU consolidated r5B13a:HEADER_8-PIN")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-0000abf727b5"
+      (reference "X8") (unit 7) (value "826629-8") (footprint "EEZ PSU consolidated r5B13a:HEADER_8-PIN")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-0000abf72789"
+      (reference "X8") (unit 8) (value "826629-8") (footprint "EEZ PSU consolidated r5B13a:HEADER_8-PIN")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-0000e9081463"
+      (reference "X9") (unit 1) (value "826629-5") (footprint "EEZ PSU consolidated r5B13a:SSW-105-02-S-S")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-0000e908146f"
+      (reference "X9") (unit 2) (value "826629-5") (footprint "EEZ PSU consolidated r5B13a:SSW-105-02-S-S")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-0000e908146b"
+      (reference "X9") (unit 3) (value "826629-5") (footprint "EEZ PSU consolidated r5B13a:SSW-105-02-S-S")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-0000e9081477"
+      (reference "X9") (unit 4) (value "826629-5") (footprint "EEZ PSU consolidated r5B13a:SSW-105-02-S-S")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-0000e9081473"
+      (reference "X9") (unit 5) (value "826629-5") (footprint "EEZ PSU consolidated r5B13a:SSW-105-02-S-S")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-000065fd9051"
+      (reference "X10") (unit 1) (value "826629-5") (footprint "EEZ PSU consolidated r5B13a:SSW-105-02-S-S")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-000065fd905d"
+      (reference "X10") (unit 2) (value "826629-5") (footprint "EEZ PSU consolidated r5B13a:SSW-105-02-S-S")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-000065fd9059"
+      (reference "X10") (unit 3) (value "826629-5") (footprint "EEZ PSU consolidated r5B13a:SSW-105-02-S-S")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-000065fd9045"
+      (reference "X10") (unit 4) (value "826629-5") (footprint "EEZ PSU consolidated r5B13a:SSW-105-02-S-S")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-00005f2c949e"
+      (reference "X11") (unit 1) (value "2411-01") (footprint "EEZ PSU consolidated r5B13a:KUSBVX-BS1N")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-00004f60ed90"
+      (reference "ZD6") (unit 1) (value "SMAJ18A") (footprint "EEZ PSU consolidated r5B13a:DO214AC")
+    )
+    (path "/00000000-0000-0000-0000-00005b870870/00000000-0000-0000-0000-000084e9dbfb"
+      (reference "ZD17") (unit 1) (value "PDZ5.6B") (footprint "EEZ PSU consolidated r5B13a:SOD323-W")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-0000730264e4"
+      (reference "#+3V024") (unit 1) (value "+3V3") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-00005309f50e"
+      (reference "#+3V025") (unit 1) (value "+3V3") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-0000ffc44687"
+      (reference "#+3V026") (unit 1) (value "+3V3") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-00006355ad65"
+      (reference "#+3V027") (unit 1) (value "+3V3") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-000080cfefcc"
+      (reference "#FRAME12") (unit 1) (value "DINA4_L") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-00009cd1bb76"
+      (reference "#SUPPLY039") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-00004a937d01"
+      (reference "#SUPPLY042") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-00004969e8ed"
+      (reference "#SUPPLY047") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-0000e26768e6"
+      (reference "#SUPPLY061") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-0000b8ff3953"
+      (reference "#SUPPLY062") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-0000c2078bbe"
+      (reference "#SUPPLY065") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-0000bead07eb"
+      (reference "#SUPPLY070") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-0000e3aa47eb"
+      (reference "#SUPPLY079") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-00005c40b473"
+      (reference "#SUPPLY094") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-0000bc62974d"
+      (reference "#SUPPLY0116") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-000062b505c6"
+      (reference "#SUPPLY0126") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-00006dbbfff5"
+      (reference "C142") (unit 1) (value "1n") (footprint "EEZ PSU consolidated r5B13a:C1206")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-0000361b3e2e"
+      (reference "C143") (unit 1) (value "1n") (footprint "EEZ PSU consolidated r5B13a:C1206")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-00009508029c"
+      (reference "C144") (unit 1) (value "n.c") (footprint "EEZ PSU consolidated r5B13a:C1206")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-00008e9c6108"
+      (reference "C145") (unit 1) (value "2m2") (footprint "EEZ PSU consolidated r5B13a:ECAP7.5_18")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-0000aeeec613"
+      (reference "C146") (unit 1) (value "2m2") (footprint "EEZ PSU consolidated r5B13a:ECAP7.5_18")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-0000925137cc"
+      (reference "C147") (unit 1) (value "1n") (footprint "EEZ PSU consolidated r5B13a:C1206")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-0000e420c4a9"
+      (reference "C148") (unit 1) (value "1n") (footprint "EEZ PSU consolidated r5B13a:C1206")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-00009e052cf6"
+      (reference "C149") (unit 1) (value "1u") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-000062f2389b"
+      (reference "C150") (unit 1) (value "470n") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-000030cd8390"
+      (reference "C151") (unit 1) (value "4n7") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-0000f74d0bde"
+      (reference "C152") (unit 1) (value "4n7") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-00001aacb6b6"
+      (reference "C153") (unit 1) (value "470n") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-00008dd2a69a"
+      (reference "C154") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-000029c637d0"
+      (reference "C155") (unit 1) (value "220n") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-0000e1ebf7a8"
+      (reference "D22") (unit 1) (value "STPS15H100") (footprint "EEZ PSU consolidated r5B13a:TO252")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-0000f5bc6505"
+      (reference "D23") (unit 1) (value "STPS15H100") (footprint "EEZ PSU consolidated r5B13a:TO252")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-000079c94c35"
+      (reference "D24") (unit 1) (value "STPS15H100") (footprint "EEZ PSU consolidated r5B13a:TO252")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-00004f6036a1"
+      (reference "D25") (unit 1) (value "STPS15H100") (footprint "EEZ PSU consolidated r5B13a:TO252")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-0000d3e829c8"
+      (reference "IC33") (unit 1) (value "74LVC1G125GW.125") (footprint "EEZ PSU consolidated r5B13a:SOT65P210X110-5N")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-0000d3e829c4"
+      (reference "IC33") (unit 2) (value "74LVC1G125GW.125") (footprint "EEZ PSU consolidated r5B13a:SOT65P210X110-5N")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-000086424953"
+      (reference "IC34") (unit 1) (value "TPA6205A1DGN") (footprint "EEZ PSU consolidated r5B13a:SOP65P490X110-9N")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-000053efffd8"
+      (reference "J7") (unit 1) (value "693072010801") (footprint "EEZ PSU consolidated r5B13a:693072010801")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-00008a06af7f"
+      (reference "R167") (unit 1) (value "n.c.") (footprint "EEZ PSU consolidated r5B13a:R1206")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-0000dcee4719"
+      (reference "R168") (unit 1) (value "12K") (footprint "EEZ PSU consolidated r5B13a:R1206")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-0000bb16371a"
+      (reference "R169") (unit 1) (value "20K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-00006c74829d"
+      (reference "R170") (unit 1) (value "1K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-00002430c287"
+      (reference "R171") (unit 1) (value "1K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-0000bcc26c09"
+      (reference "R172") (unit 1) (value "10K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-0000330e21e0"
+      (reference "R173") (unit 1) (value "10K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-0000782f8705"
+      (reference "R174") (unit 1) (value "47K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-000067612961"
+      (reference "R175") (unit 1) (value "20K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-00002e4eebd6"
+      (reference "SP2") (unit 1) (value "LD-BZEN-0903") (footprint "EEZ PSU consolidated r5B13a:LD-BZEN-0903")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-0000e00ac1cb"
+      (reference "X19") (unit 1) (value "282836-2") (footprint "EEZ PSU consolidated r5B13a:TBLOCK5.0_2")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-0000e00ac1c7"
+      (reference "X19") (unit 2) (value "282836-2") (footprint "EEZ PSU consolidated r5B13a:TBLOCK5.0_2")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-0000dfa9ebb3"
+      (reference "X20") (unit 1) (value "PCA-6B-20-HL-3 or 52746-2071") (footprint "EEZ PSU consolidated r5B13a:FPC-20_ROTATED")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-0000dfa9ebbf"
+      (reference "X20") (unit 2) (value "PCA-6B-20-HL-3 or 52746-2071") (footprint "EEZ PSU consolidated r5B13a:FPC-20_ROTATED")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-0000dfa9ebbb"
+      (reference "X20") (unit 3) (value "PCA-6B-20-HL-3 or 52746-2071") (footprint "EEZ PSU consolidated r5B13a:FPC-20_ROTATED")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-0000dfa9eba7"
+      (reference "X20") (unit 4) (value "PCA-6B-20-HL-3 or 52746-2071") (footprint "EEZ PSU consolidated r5B13a:FPC-20_ROTATED")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-0000dfa9eba3"
+      (reference "X20") (unit 5) (value "PCA-6B-20-HL-3 or 52746-2071") (footprint "EEZ PSU consolidated r5B13a:FPC-20_ROTATED")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-0000dfa9ebaf"
+      (reference "X20") (unit 6) (value "PCA-6B-20-HL-3 or 52746-2071") (footprint "EEZ PSU consolidated r5B13a:FPC-20_ROTATED")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-0000dfa9ebab"
+      (reference "X20") (unit 7) (value "PCA-6B-20-HL-3 or 52746-2071") (footprint "EEZ PSU consolidated r5B13a:FPC-20_ROTATED")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-0000dfa9eb97"
+      (reference "X20") (unit 8) (value "PCA-6B-20-HL-3 or 52746-2071") (footprint "EEZ PSU consolidated r5B13a:FPC-20_ROTATED")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-0000dfa9eb93"
+      (reference "X20") (unit 9) (value "PCA-6B-20-HL-3 or 52746-2071") (footprint "EEZ PSU consolidated r5B13a:FPC-20_ROTATED")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-0000dfa9eb9f"
+      (reference "X20") (unit 10) (value "PCA-6B-20-HL-3 or 52746-2071") (footprint "EEZ PSU consolidated r5B13a:FPC-20_ROTATED")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-0000dfa9ebf3"
+      (reference "X20") (unit 17) (value "PCA-6B-20-HL-3 or 52746-2071") (footprint "EEZ PSU consolidated r5B13a:FPC-20_ROTATED")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-0000dfa9ebff"
+      (reference "X20") (unit 18) (value "PCA-6B-20-HL-3 or 52746-2071") (footprint "EEZ PSU consolidated r5B13a:FPC-20_ROTATED")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-0000dfa9ebfb"
+      (reference "X20") (unit 19) (value "PCA-6B-20-HL-3 or 52746-2071") (footprint "EEZ PSU consolidated r5B13a:FPC-20_ROTATED")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-0000dfa9ebe7"
+      (reference "X20") (unit 20) (value "PCA-6B-20-HL-3 or 52746-2071") (footprint "EEZ PSU consolidated r5B13a:FPC-20_ROTATED")
+    )
+    (path "/00000000-0000-0000-0000-00005b8722d3/00000000-0000-0000-0000-0000d3fb81e3"
+      (reference "ZD15") (unit 1) (value "n.c.") (footprint "EEZ PSU consolidated r5B13a:DO214AA")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000b9163575"
+      (reference "#FRAME2") (unit 1) (value "DINA4_L") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-000048c2c5db"
+      (reference "#P+03") (unit 1) (value "V+") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-00005e7f5afc"
+      (reference "#P+028") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000d1e0a846"
+      (reference "#P-01") (unit 1) (value "V-") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-000033ab5e06"
+      (reference "#SUPPLY02") (unit 1) (value "-12V") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-00005a6ae8e8"
+      (reference "#SUPPLY04") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000664a67f4"
+      (reference "#SUPPLY05") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000e136e49c"
+      (reference "#SUPPLY06") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-00007fadd5a0"
+      (reference "#SUPPLY08") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000fe9fb77e"
+      (reference "#SUPPLY09") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000cb7b837c"
+      (reference "#SUPPLY013") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000d19e6cab"
+      (reference "#SUPPLY019") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000533f56ed"
+      (reference "#SUPPLY022") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-00005f51a49b"
+      (reference "#SUPPLY027") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000b67572d4"
+      (reference "#SUPPLY064") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-00006719fb2b"
+      (reference "#SUPPLY0102") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-00005047d7be"
+      (reference "#SUPPLY0128") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-00003554c70b"
+      (reference "C32") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-000023146f2a"
+      (reference "C33") (unit 1) (value "1u/100V") (footprint "EEZ PSU consolidated r5B13a:C1206")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000937eae9d"
+      (reference "C34") (unit 1) (value "47p") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000e3413257"
+      (reference "C35") (unit 1) (value "10n") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-00006b0e3443"
+      (reference "C36") (unit 1) (value "2n2") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000130e8044"
+      (reference "C37") (unit 1) (value "2n2") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-00008087cd94"
+      (reference "C38") (unit 1) (value "2n2") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000b736fea5"
+      (reference "C39") (unit 1) (value "120p") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000326ad41e"
+      (reference "C40") (unit 1) (value "2n2") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000d382c713"
+      (reference "C41") (unit 1) (value "47p") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-00003486afa6"
+      (reference "C42") (unit 1) (value "10n") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-00002129e4bb"
+      (reference "C43") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-000080c8c850"
+      (reference "C44") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000f1d35e7e"
+      (reference "C45") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000048d8e5c"
+      (reference "C46") (unit 1) (value "1u") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000ead17618"
+      (reference "C47") (unit 1) (value "10n") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-00002519b722"
+      (reference "C48") (unit 1) (value "1u") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000f533ae70"
+      (reference "C49") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000bbce79fa"
+      (reference "C50") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000b5fa8829"
+      (reference "C51") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000849d4c53"
+      (reference "C52") (unit 1) (value "1n") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000b38b1921"
+      (reference "C53") (unit 1) (value "1n") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000ea1f28d5"
+      (reference "D3") (unit 1) (value "BAS316") (footprint "EEZ PSU consolidated r5B13a:SOD323-R")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-00007dd77e9d"
+      (reference "D4") (unit 1) (value "BAS316") (footprint "EEZ PSU consolidated r5B13a:SOD323-R")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000d1642b09"
+      (reference "D5") (unit 1) (value "BAS316") (footprint "EEZ PSU consolidated r5B13a:SOD323-R")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000f4e8650c"
+      (reference "D6") (unit 1) (value "BAS316") (footprint "EEZ PSU consolidated r5B13a:SOD323-R")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-00006865cb0a"
+      (reference "D7") (unit 1) (value "BAS316") (footprint "EEZ PSU consolidated r5B13a:SOD323-R")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-00002d27320d"
+      (reference "D8") (unit 1) (value "BAS316") (footprint "EEZ PSU consolidated r5B13a:SOD323-R")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000b81038a9"
+      (reference "D9") (unit 1) (value "BAS316") (footprint "EEZ PSU consolidated r5B13a:SOD323-R")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000f28db082"
+      (reference "D10") (unit 1) (value "BAS316") (footprint "EEZ PSU consolidated r5B13a:SOD323-R")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000c057a724"
+      (reference "IC5") (unit 1) (value "TL072D") (footprint "EEZ PSU consolidated r5B13a:SOIC127P600X173-8N")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000c057a728"
+      (reference "IC5") (unit 2) (value "TL072D") (footprint "EEZ PSU consolidated r5B13a:SOIC127P600X173-8N")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000c057a72c"
+      (reference "IC5") (unit 3) (value "TL072D") (footprint "EEZ PSU consolidated r5B13a:SOIC127P600X173-8N")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-00002214b29c"
+      (reference "IC6") (unit 1) (value "TL072D") (footprint "EEZ PSU consolidated r5B13a:SOIC127P600X173-8N")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-00002214b290"
+      (reference "IC6") (unit 2) (value "TL072D") (footprint "EEZ PSU consolidated r5B13a:SOIC127P600X173-8N")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-00002214b294"
+      (reference "IC6") (unit 3) (value "TL072D") (footprint "EEZ PSU consolidated r5B13a:SOIC127P600X173-8N")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-000051f87b19"
+      (reference "IC7") (unit 1) (value "LTC2050HVCS8#PBF") (footprint "EEZ PSU consolidated r5B13a:SOIC127P600X173-8N")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-000051f87b15"
+      (reference "IC7") (unit 2) (value "LTC2050HVCS8#PBF") (footprint "EEZ PSU consolidated r5B13a:SOIC127P600X173-8N")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000bafa783c"
+      (reference "JP2") (unit 1) (value "JP3-CUT") (footprint "EEZ PSU consolidated r5B13a:JP3-CUT")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000f2a595f1"
+      (reference "Q4") (unit 1) (value "IRFP250N") (footprint "EEZ PSU consolidated r5B13a:TO247BH-CLR")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-000019f50b00"
+      (reference "Q5") (unit 1) (value "BC857C") (footprint "EEZ PSU consolidated r5B13a:SOT23-BEC")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000ea9afbf2"
+      (reference "Q6") (unit 1) (value "BCP56-16.115") (footprint "EEZ PSU consolidated r5B13a:SOT230P700X180-4N")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-00007c787f1d"
+      (reference "Q7") (unit 1) (value "IRFR5305") (footprint "EEZ PSU consolidated r5B13a:TO229P990X239-3N")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-000050d432c7"
+      (reference "Q8") (unit 1) (value "BCP56-16.115") (footprint "EEZ PSU consolidated r5B13a:SOT230P700X180-4N")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-00008519c255"
+      (reference "Q9") (unit 1) (value "MMBT5401") (footprint "EEZ PSU consolidated r5B13a:SOT23-BEC")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-00008c0dd2a6"
+      (reference "Q10") (unit 1) (value "MMBT5401") (footprint "EEZ PSU consolidated r5B13a:SOT23-BEC")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-00001560b660"
+      (reference "Q11") (unit 1) (value "MMBT5551") (footprint "EEZ PSU consolidated r5B13a:SOT23-BEC")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000195f2892"
+      (reference "Q12") (unit 1) (value "MMBT5551") (footprint "EEZ PSU consolidated r5B13a:SOT23-BEC")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000d98636d8"
+      (reference "Q13") (unit 1) (value "IRLL2705PBF") (footprint "EEZ PSU consolidated r5B13a:SOT223")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000474c9e1c"
+      (reference "Q14") (unit 1) (value "IRFR48ZPBF") (footprint "EEZ PSU consolidated r5B13a:TO229P990X239-3N")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-00008f8bcdb3"
+      (reference "Q34") (unit 1) (value "2N7002") (footprint "EEZ PSU consolidated r5B13a:SOT103P240X110-3N")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-00004668c9e6"
+      (reference "R26") (unit 1) (value "2R2/2W") (footprint "EEZ PSU consolidated r5B13a:R2512")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000d54f13e9"
+      (reference "R27") (unit 1) (value "10K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000dca88cda"
+      (reference "R28") (unit 1) (value "1K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-00005a394440"
+      (reference "R29") (unit 1) (value "2K2") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-000037144564"
+      (reference "R30") (unit 1) (value "2K2") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000139179c0"
+      (reference "R31") (unit 1) (value "220R") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000b43988f7"
+      (reference "R32") (unit 1) (value "n.c.") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000bb8d5f3d"
+      (reference "R33") (unit 1) (value "10R") (footprint "EEZ PSU consolidated r5B13a:R1206")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000580752bb"
+      (reference "R34") (unit 1) (value "16K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000db462318"
+      (reference "R35") (unit 1) (value "220R") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000d53c8267"
+      (reference "R36") (unit 1) (value "220R") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-00009f84a1f3"
+      (reference "R37") (unit 1) (value "470R") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-00004e46f10b"
+      (reference "R38") (unit 1) (value "1K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-00008e96c20e"
+      (reference "R39") (unit 1) (value "7K5 0.1%") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000f99ea41e"
+      (reference "R40") (unit 1) (value "10K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-000025335c33"
+      (reference "R41") (unit 1) (value "220R") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000f667bde4"
+      (reference "R42") (unit 1) (value "100R") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-00007d2c7e11"
+      (reference "R43") (unit 1) (value "100K 0.1%") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-00009bcd6bef"
+      (reference "R44") (unit 1) (value "24K 0.1%") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000547a97ee"
+      (reference "R45") (unit 1) (value "2K2") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-000098a737d5"
+      (reference "R46") (unit 1) (value "750R") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-000063827c55"
+      (reference "R47") (unit 1) (value "220R") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000d5e3c82a"
+      (reference "R48") (unit 1) (value "51K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000cd91161d"
+      (reference "R49") (unit 1) (value "10K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-00003b4b6c79"
+      (reference "R50") (unit 1) (value "470R") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-00001710eac5"
+      (reference "R51") (unit 1) (value "10K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-00005471f310"
+      (reference "R52") (unit 1) (value "7K5 0.1%") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-00006899f303"
+      (reference "R53") (unit 1) (value "100K 0.1%") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-00008e586949"
+      (reference "R54") (unit 1) (value "24K 0.1%") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-000064e2f0e6"
+      (reference "R55") (unit 1) (value "1K8") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-000008ea6742"
+      (reference "R56") (unit 1) (value "0R") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-00007a0d0c5e"
+      (reference "R57") (unit 1) (value "220R") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-00000c42fba6"
+      (reference "R58") (unit 1) (value "10K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-00002813bdd5"
+      (reference "R59") (unit 1) (value "n.c.") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000e100aed0"
+      (reference "R60") (unit 1) (value "3K9 0.1%") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-00006b7df1b2"
+      (reference "R61") (unit 1) (value "2K2") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000b4940c1b"
+      (reference "R62") (unit 1) (value "82R 0.1%") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000961e07bf"
+      (reference "R63") (unit 1) (value "0R082") (footprint "EEZ PSU consolidated r5B13a:R1210")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000b5625cef"
+      (reference "R64") (unit 1) (value "10K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000369965ea"
+      (reference "R65") (unit 1) (value "0R030") (footprint "EEZ PSU consolidated r5B13a:R2512")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-00008a279e00"
+      (reference "R66") (unit 1) (value "47K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-00006b8cea5c"
+      (reference "R67") (unit 1) (value "47K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000c8cf53bd"
+      (reference "R68") (unit 1) (value "1K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-00006e2dc1ae"
+      (reference "R69") (unit 1) (value "10K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000f56cf1cc"
+      (reference "R70") (unit 1) (value "3K9 0.1%") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-00009a46c1b3"
+      (reference "R71") (unit 1) (value "82R 0.1%") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000fb7cadf6"
+      (reference "R72") (unit 1) (value "10K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-00007aa312ba"
+      (reference "R179") (unit 1) (value "0R75") (footprint "EEZ PSU consolidated r5B13a:R1206")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-000083161b66"
+      (reference "R180") (unit 1) (value "47K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000962c63c6"
+      (reference "R65A1") (unit 1) (value "0R030") (footprint "EEZ PSU consolidated r5B13a:R_2512-4WIRE")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-000043b2d74c"
+      (reference "R65B1") (unit 1) (value "0R030") (footprint "EEZ PSU consolidated r5B13a:R2512")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000ee6a8c1b"
+      (reference "X2") (unit 17) (value "SSW-113-02-T-D-RA") (footprint "EEZ PSU consolidated r5B13a:SSW-113-02-T-D-RA")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000ee6a8c17"
+      (reference "X2") (unit 18) (value "SSW-113-02-T-D-RA") (footprint "EEZ PSU consolidated r5B13a:SSW-113-02-T-D-RA")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000ee6a8c13"
+      (reference "X2") (unit 19) (value "SSW-113-02-T-D-RA") (footprint "EEZ PSU consolidated r5B13a:SSW-113-02-T-D-RA")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000ee6a8c0f"
+      (reference "X2") (unit 20) (value "SSW-113-02-T-D-RA") (footprint "EEZ PSU consolidated r5B13a:SSW-113-02-T-D-RA")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000ee6a8c0b"
+      (reference "X2") (unit 21) (value "SSW-113-02-T-D-RA") (footprint "EEZ PSU consolidated r5B13a:SSW-113-02-T-D-RA")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000ee6a8c07"
+      (reference "X2") (unit 22) (value "SSW-113-02-T-D-RA") (footprint "EEZ PSU consolidated r5B13a:SSW-113-02-T-D-RA")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000ee6a8c03"
+      (reference "X2") (unit 23) (value "SSW-113-02-T-D-RA") (footprint "EEZ PSU consolidated r5B13a:SSW-113-02-T-D-RA")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000ee6a8c3f"
+      (reference "X2") (unit 24) (value "SSW-113-02-T-D-RA") (footprint "EEZ PSU consolidated r5B13a:SSW-113-02-T-D-RA")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000ee6a8c3b"
+      (reference "X2") (unit 25) (value "SSW-113-02-T-D-RA") (footprint "EEZ PSU consolidated r5B13a:SSW-113-02-T-D-RA")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000ee6a8c37"
+      (reference "X2") (unit 26) (value "SSW-113-02-T-D-RA") (footprint "EEZ PSU consolidated r5B13a:SSW-113-02-T-D-RA")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-0000b70fd2b4"
+      (reference "ZD2") (unit 1) (value "BZX384-C15") (footprint "EEZ PSU consolidated r5B13a:SOD323-W")
+    )
+    (path "/00000000-0000-0000-0000-00005b86f516/00000000-0000-0000-0000-000040047a14"
+      (reference "ZD3") (unit 1) (value "PDZ6.2B") (footprint "EEZ PSU consolidated r5B13a:SOD323-W")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000f2c80fa3"
+      (reference "#+3V015") (unit 1) (value "+3V3") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-000017d06aae"
+      (reference "#FRAME9") (unit 1) (value "DINA4_L") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-00009d43d020"
+      (reference "#P+020") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000091b6ec0"
+      (reference "#P+021") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-00002342d0ed"
+      (reference "#P+022") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000988c0a8b"
+      (reference "#P+027") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000a453148a"
+      (reference "#SUPPLY053") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-000007bdd387"
+      (reference "#SUPPLY055") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000e646fc6a"
+      (reference "#SUPPLY057") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000eb73a4d4"
+      (reference "#SUPPLY058") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-000021dcfd96"
+      (reference "C86") (unit 1) (value "50SVPF18M") (footprint "EEZ PSU consolidated r5B13a:CAPAE830X650N")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000eec5f00b"
+      (reference "C87") (unit 1) (value "470n") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-00007ef724fa"
+      (reference "C88") (unit 1) (value "4n7/100V") (footprint "EEZ PSU consolidated r5B13a:C1210")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-00000cd94ec6"
+      (reference "C89") (unit 1) (value "UWT1H220MCL") (footprint "EEZ PSU consolidated r5B13a:CAPAE830X650N")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000773e810e"
+      (reference "C90") (unit 1) (value "10u") (footprint "EEZ PSU consolidated r5B13a:C1210")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-000020caf282"
+      (reference "C91") (unit 1) (value "4n7/100V") (footprint "EEZ PSU consolidated r5B13a:C1210")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-00003363ae49"
+      (reference "C92") (unit 1) (value "470n") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000e9c3b98d"
+      (reference "C93") (unit 1) (value "4n7/100V") (footprint "EEZ PSU consolidated r5B13a:C1210")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000967bc465"
+      (reference "C94") (unit 1) (value "UWT1H220MCL") (footprint "EEZ PSU consolidated r5B13a:CAPAE830X650N")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000babd5995"
+      (reference "C95") (unit 1) (value "4n7/100V") (footprint "EEZ PSU consolidated r5B13a:C1210")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-00005e5d6f36"
+      (reference "C96") (unit 1) (value "50SVPF18M") (footprint "EEZ PSU consolidated r5B13a:CAPAE830X650N")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000ea09f549"
+      (reference "C104A1") (unit 1) (value "1u") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-00003c0f6b5d"
+      (reference "C109A1") (unit 1) (value "1u") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-00009c4a1539"
+      (reference "D13") (unit 1) (value "BAS316") (footprint "EEZ PSU consolidated r5B13a:SOD323-R")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000501335de"
+      (reference "D14") (unit 1) (value "BAS316") (footprint "EEZ PSU consolidated r5B13a:SOD323-W")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-000070acd835"
+      (reference "D15") (unit 1) (value "BAS316") (footprint "EEZ PSU consolidated r5B13a:SOD323-W")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-000033277a18"
+      (reference "D16") (unit 1) (value "BAS316") (footprint "EEZ PSU consolidated r5B13a:SOD323-R")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-00002c358a67"
+      (reference "FM5") (unit 1) (value "FIDUCIAL_2") (footprint "EEZ PSU consolidated r5B13a:FIDUCIAL_DUAL")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-000017039b8e"
+      (reference "FM6") (unit 1) (value "FIDUCIAL_2") (footprint "EEZ PSU consolidated r5B13a:FIDUCIAL_DUAL")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-00006efa9414"
+      (reference "IC18") (unit 1) (value "TLC5925IDBQR") (footprint "EEZ PSU consolidated r5B13a:SOP63P600X175-24N")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000458172f0"
+      (reference "J1") (unit 1) (value "BS-244DSM-R") (footprint "EEZ PSU consolidated r5B13a:BP_5_12")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000d83aa60c"
+      (reference "J2") (unit 1) (value "1-726388-2") (footprint "EEZ PSU consolidated r5B13a:PCB_TAB-4.8MM")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-000000083527"
+      (reference "J3") (unit 1) (value "BS-244DSM-G") (footprint "EEZ PSU consolidated r5B13a:BP_5_12")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000fbe157e1"
+      (reference "J4") (unit 1) (value "BS-244DSM-B") (footprint "EEZ PSU consolidated r5B13a:BP_5_12")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-00007d54d00b"
+      (reference "J5") (unit 1) (value "BS-244DSM-R") (footprint "EEZ PSU consolidated r5B13a:BP_5_12")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000c7d440d3"
+      (reference "J6") (unit 1) (value "BS-244DSM-B") (footprint "EEZ PSU consolidated r5B13a:BP_5_12")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000deaf697b"
+      (reference "K_PAR1") (unit 1) (value "RT424005") (footprint "EEZ PSU consolidated r5B13a:RT-C_016A5_ROUND")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000deaf6977"
+      (reference "K_PAR1") (unit 2) (value "RT424005") (footprint "EEZ PSU consolidated r5B13a:RT-C_016A5_ROUND")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000deaf6973"
+      (reference "K_PAR1") (unit 3) (value "RT424005") (footprint "EEZ PSU consolidated r5B13a:RT-C_016A5_ROUND")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000e2180004"
+      (reference "K_S1") (unit 1) (value "G6K-2F-5DC") (footprint "EEZ PSU consolidated r5B13a:G6K-2F")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000e2180008"
+      (reference "K_S1") (unit 2) (value "G6K-2F-5DC") (footprint "EEZ PSU consolidated r5B13a:G6K-2F")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000e218000c"
+      (reference "K_S1") (unit 3) (value "G6K-2F-5DC") (footprint "EEZ PSU consolidated r5B13a:G6K-2F")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000e1a557b3"
+      (reference "K_S2") (unit 1) (value "G6K-2F-5DC") (footprint "EEZ PSU consolidated r5B13a:G6K-2F")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000e1a557bf"
+      (reference "K_S2") (unit 2) (value "G6K-2F-5DC") (footprint "EEZ PSU consolidated r5B13a:G6K-2F")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000e1a557bb"
+      (reference "K_S2") (unit 3) (value "G6K-2F-5DC") (footprint "EEZ PSU consolidated r5B13a:G6K-2F")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-00009978ef33"
+      (reference "K_SER1") (unit 1) (value "RT424005") (footprint "EEZ PSU consolidated r5B13a:RT-C_016A5_ROUND")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-00009978ef3f"
+      (reference "K_SER1") (unit 2) (value "RT424005") (footprint "EEZ PSU consolidated r5B13a:RT-C_016A5_ROUND")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-00009978ef3b"
+      (reference "K_SER1") (unit 3) (value "RT424005") (footprint "EEZ PSU consolidated r5B13a:RT-C_016A5_ROUND")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000aa4a179d"
+      (reference "LED_CC1") (unit 1) (value "HSMH-C170") (footprint "EEZ PSU consolidated r5B13a:LED_HSMH-C170")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-00005f9387c2"
+      (reference "LED_CC2") (unit 1) (value "HSMH-C170") (footprint "EEZ PSU consolidated r5B13a:LED_HSMH-C170")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000c4f1deae"
+      (reference "LED_CV1") (unit 1) (value "HSMY-C170") (footprint "EEZ PSU consolidated r5B13a:LED_0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000cd1f1a1a"
+      (reference "LED_CV2") (unit 1) (value "HSMY-C170") (footprint "EEZ PSU consolidated r5B13a:LED_0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000e6235207"
+      (reference "LED_O1") (unit 1) (value "HSMG-C170") (footprint "EEZ PSU consolidated r5B13a:LED_0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000a9012f9b"
+      (reference "LED_O2") (unit 1) (value "HSMG-C170") (footprint "EEZ PSU consolidated r5B13a:LED_0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000dc206d80"
+      (reference "LED_PROG1") (unit 1) (value "HSMH-C170") (footprint "EEZ PSU consolidated r5B13a:LED_HSMH-C170")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000fc8e073f"
+      (reference "LED_PROG2") (unit 1) (value "HSMH-C170") (footprint "EEZ PSU consolidated r5B13a:LED_HSMH-C170")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000d94a45ed"
+      (reference "LED_PWR1") (unit 1) (value "HSMD-C170 ") (footprint "EEZ PSU consolidated r5B13a:LED_0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000c17797f5"
+      (reference "LED_S1") (unit 1) (value "HSMY-C170") (footprint "EEZ PSU consolidated r5B13a:LED_0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000b0f5c562"
+      (reference "LED_S2") (unit 1) (value "HSMY-C170") (footprint "EEZ PSU consolidated r5B13a:LED_0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-00003bfbd0da"
+      (reference "LED_SP1") (unit 1) (value "HSMH-C170") (footprint "EEZ PSU consolidated r5B13a:LED_HSMH-C170")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-000045fd1ab3"
+      (reference "Q26") (unit 1) (value "IRLML2246TRPBF") (footprint "EEZ PSU consolidated r5B13a:SOT95P237X112-3N")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-00009f2d8cc0"
+      (reference "Q27") (unit 1) (value "IRLML2246TRPBF") (footprint "EEZ PSU consolidated r5B13a:SOT95P237X112-3N")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000806f67f3"
+      (reference "Q28") (unit 1) (value "IRLML2246TRPBF") (footprint "EEZ PSU consolidated r5B13a:SOT95P237X112-3N")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000f121c6ca"
+      (reference "Q29") (unit 1) (value "IRLML2246TRPBF") (footprint "EEZ PSU consolidated r5B13a:SOT95P237X112-3N")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000aade52f3"
+      (reference "R126") (unit 1) (value "4K7") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-00007d425ace"
+      (reference "R127") (unit 1) (value "4K7") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000d269139c"
+      (reference "R128") (unit 1) (value "4K7") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-00003f9a1414"
+      (reference "R129") (unit 1) (value "1R") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000981b9eda"
+      (reference "R130") (unit 1) (value "1K8") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-00009fa0abb4"
+      (reference "R131") (unit 1) (value "4K7") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-000068eaa524"
+      (reference "R132") (unit 1) (value "1R") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-00002d5e3d32"
+      (reference "R136A1") (unit 1) (value "1R") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000ac78513e"
+      (reference "R140A1") (unit 1) (value "1R") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000756a31a6"
+      (reference "X12") (unit 3) (value "MC000006") (footprint "EEZ PSU consolidated r5B13a:MC000006_MIRROR")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000756a31ba"
+      (reference "X12") (unit 4) (value "MC000006") (footprint "EEZ PSU consolidated r5B13a:MC000006_MIRROR")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000756a31be"
+      (reference "X12") (unit 5) (value "MC000006") (footprint "EEZ PSU consolidated r5B13a:MC000006_MIRROR")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-000089f53a46"
+      (reference "X13") (unit 17) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-000089f53a4a"
+      (reference "X13") (unit 18) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-000089f53a4e"
+      (reference "X13") (unit 19) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-000089f53a52"
+      (reference "X13") (unit 20) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-000089f53a56"
+      (reference "X13") (unit 21) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-000089f53a5a"
+      (reference "X13") (unit 22) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-000089f53a5e"
+      (reference "X13") (unit 23) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-000089f53a62"
+      (reference "X13") (unit 24) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-000089f53a66"
+      (reference "X13") (unit 25) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-000089f53a6a"
+      (reference "X13") (unit 26) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000e29d80aa"
+      (reference "X14") (unit 3) (value "MC000006") (footprint "EEZ PSU consolidated r5B13a:MC000006_MIRROR")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000e29d80b6"
+      (reference "X14") (unit 4) (value "MC000006") (footprint "EEZ PSU consolidated r5B13a:MC000006_MIRROR")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000e29d80b2"
+      (reference "X14") (unit 5) (value "MC000006") (footprint "EEZ PSU consolidated r5B13a:MC000006_MIRROR")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000a188a0e9"
+      (reference "X15") (unit 17) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000a188a0e5"
+      (reference "X15") (unit 18) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000a188a0e1"
+      (reference "X15") (unit 19) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000a188a0fd"
+      (reference "X15") (unit 20) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000a188a0f9"
+      (reference "X15") (unit 21) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000a188a0f5"
+      (reference "X15") (unit 22) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000a188a0f1"
+      (reference "X15") (unit 23) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000a188a0cd"
+      (reference "X15") (unit 24) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000a188a0c9"
+      (reference "X15") (unit 25) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000a188a0c5"
+      (reference "X15") (unit 26) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-00009fa9c7f8"
+      (reference "ZD7") (unit 1) (value "P4SMAJ48A") (footprint "EEZ PSU consolidated r5B13a:DO214AC")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000920aa273"
+      (reference "ZD8") (unit 1) (value "SMAJ18A") (footprint "EEZ PSU consolidated r5B13a:DO214AC")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-0000da83024e"
+      (reference "ZD9") (unit 1) (value "SMAJ18A") (footprint "EEZ PSU consolidated r5B13a:DO214AC")
+    )
+    (path "/00000000-0000-0000-0000-00005b870baa/00000000-0000-0000-0000-00005f3b6e90"
+      (reference "ZD10") (unit 1) (value "P4SMAJ48A") (footprint "EEZ PSU consolidated r5B13a:DO214AC")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-00005a84812c"
+      (reference "#FRAME4") (unit 1) (value "DINA4_L") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-00006a081b6e"
+      (reference "#P+01") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000637b3a6a"
+      (reference "#P+02") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000459fcd94"
+      (reference "#P+04") (unit 1) (value "V+") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000e32dc4a8"
+      (reference "#P+08") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000dd8f0ab4"
+      (reference "#P+09") (unit 1) (value "V+") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000bc83e68f"
+      (reference "#P+012") (unit 1) (value "V+") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000836a5f30"
+      (reference "#P+015") (unit 1) (value "V+") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-000033fd6e47"
+      (reference "#P+029") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-00000975b301"
+      (reference "#SUPPLY03") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-00006ffc59bd"
+      (reference "#SUPPLY07") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-00006e62222a"
+      (reference "#SUPPLY010") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000a64bf624"
+      (reference "#SUPPLY011") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-00007739728f"
+      (reference "#SUPPLY012") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000829f86b3"
+      (reference "#SUPPLY014") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000c003e4c3"
+      (reference "#SUPPLY016") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000604c44ba"
+      (reference "#SUPPLY017") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-000086f63210"
+      (reference "#SUPPLY018") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-00006f466e42"
+      (reference "#SUPPLY024") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000178474cc"
+      (reference "#SUPPLY025") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-000020755922"
+      (reference "#SUPPLY031") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000abd9855b"
+      (reference "#SUPPLY032") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000a6de95d3"
+      (reference "#SUPPLY034") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000a18a0c0d"
+      (reference "#SUPPLY049") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000d2d0505a"
+      (reference "#SUPPLY050") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-00007a15e5d0"
+      (reference "#SUPPLY056") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000d523e344"
+      (reference "#SUPPLY088") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-00007ad5d4fb"
+      (reference "C54") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-00007b3a80da"
+      (reference "C55") (unit 1) (value "10u") (footprint "EEZ PSU consolidated r5B13a:C1210")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-00005c8639f4"
+      (reference "C56") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-000022fda0a9"
+      (reference "C57") (unit 1) (value "4u7") (footprint "EEZ PSU consolidated r5B13a:EC1206")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000f82bcfbc"
+      (reference "C58") (unit 1) (value "1u") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-00008ef9a0bf"
+      (reference "C59") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-00007c8bb522"
+      (reference "C60") (unit 1) (value "3n3") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000548be353"
+      (reference "C61") (unit 1) (value "3n3") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000eabaf55d"
+      (reference "C62") (unit 1) (value "10n") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000ec4500c0"
+      (reference "C63") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000db38927d"
+      (reference "C64") (unit 1) (value "1u") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000e7d5c9f7"
+      (reference "C65") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000f5063824"
+      (reference "C66") (unit 1) (value "1u") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-00002b3649f3"
+      (reference "C67") (unit 1) (value "3n3") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000e14f816b"
+      (reference "C68") (unit 1) (value "3n3") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000d3fbb675"
+      (reference "C69") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000d5cfed59"
+      (reference "IC8") (unit 1) (value "MCP23S17-E/SS") (footprint "EEZ PSU consolidated r5B13a:SOP65P780X200-28N")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-000041f01822"
+      (reference "IC9") (unit 1) (value "REF5025AIDG4") (footprint "EEZ PSU consolidated r5B13a:SOIC127P600X175-8N")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000c438d0cc"
+      (reference "IC10") (unit 1) (value "DAC8552IDGKTG4") (footprint "EEZ PSU consolidated r5B13a:DGK8-M")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000f20560fd"
+      (reference "IC12") (unit 1) (value "TS5A9411DCKT") (footprint "EEZ PSU consolidated r5B13a:SOT65P210X110-6N")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000770beb2d"
+      (reference "IC13") (unit 1) (value "ADS1120IPWR") (footprint "EEZ PSU consolidated r5B13a:PW(R-PDSO-G16)")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-00008182258e"
+      (reference "JP3") (unit 1) (value "JP3-CUT") (footprint "EEZ PSU consolidated r5B13a:JP3-CUT")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000f0aaecac"
+      (reference "Q15") (unit 1) (value "IRLML2246TRPBF") (footprint "EEZ PSU consolidated r5B13a:SOT95P237X112-3N")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000b7871434"
+      (reference "Q16") (unit 1) (value "2N7002") (footprint "EEZ PSU consolidated r5B13a:SOT103P240X110-3N")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-000085fabe99"
+      (reference "R73") (unit 1) (value "100K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-00008818fbdd"
+      (reference "R74") (unit 1) (value "10K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000fa17532e"
+      (reference "R75") (unit 1) (value "100K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000f3bc3d82"
+      (reference "R76") (unit 1) (value "220R") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000bf5d2a8c"
+      (reference "R77") (unit 1) (value "220R") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000559039ca"
+      (reference "R79") (unit 1) (value "220R") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000ee288d2d"
+      (reference "R80") (unit 1) (value "220R") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000e3bf75c6"
+      (reference "R81") (unit 1) (value "10R") (footprint "EEZ PSU consolidated r5B13a:R1206")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000bf39f499"
+      (reference "R78A1") (unit 1) (value "470R") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000e8d586be"
+      (reference "R78B1") (unit 1) (value "470R") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000ee6a8c5b"
+      (reference "X2") (unit 1) (value "SSW-113-02-T-D-RA") (footprint "EEZ PSU consolidated r5B13a:SSW-113-02-T-D-RA")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000ee6a8c57"
+      (reference "X2") (unit 2) (value "SSW-113-02-T-D-RA") (footprint "EEZ PSU consolidated r5B13a:SSW-113-02-T-D-RA")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000ee6a8c53"
+      (reference "X2") (unit 3) (value "SSW-113-02-T-D-RA") (footprint "EEZ PSU consolidated r5B13a:SSW-113-02-T-D-RA")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000ee6a8c4f"
+      (reference "X2") (unit 4) (value "SSW-113-02-T-D-RA") (footprint "EEZ PSU consolidated r5B13a:SSW-113-02-T-D-RA")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000ee6a8c4b"
+      (reference "X2") (unit 5) (value "SSW-113-02-T-D-RA") (footprint "EEZ PSU consolidated r5B13a:SSW-113-02-T-D-RA")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000ee6a8c47"
+      (reference "X2") (unit 6) (value "SSW-113-02-T-D-RA") (footprint "EEZ PSU consolidated r5B13a:SSW-113-02-T-D-RA")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000ee6a8c43"
+      (reference "X2") (unit 7) (value "SSW-113-02-T-D-RA") (footprint "EEZ PSU consolidated r5B13a:SSW-113-02-T-D-RA")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000ee6a8c7f"
+      (reference "X2") (unit 8) (value "SSW-113-02-T-D-RA") (footprint "EEZ PSU consolidated r5B13a:SSW-113-02-T-D-RA")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000ee6a8c7b"
+      (reference "X2") (unit 9) (value "SSW-113-02-T-D-RA") (footprint "EEZ PSU consolidated r5B13a:SSW-113-02-T-D-RA")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000ee6a8c77"
+      (reference "X2") (unit 10) (value "SSW-113-02-T-D-RA") (footprint "EEZ PSU consolidated r5B13a:SSW-113-02-T-D-RA")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000ee6a8c73"
+      (reference "X2") (unit 11) (value "SSW-113-02-T-D-RA") (footprint "EEZ PSU consolidated r5B13a:SSW-113-02-T-D-RA")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000ee6a8c6f"
+      (reference "X2") (unit 12) (value "SSW-113-02-T-D-RA") (footprint "EEZ PSU consolidated r5B13a:SSW-113-02-T-D-RA")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-0000ee6a8c67"
+      (reference "X2") (unit 14) (value "SSW-113-02-T-D-RA") (footprint "EEZ PSU consolidated r5B13a:SSW-113-02-T-D-RA")
+    )
+    (path "/00000000-0000-0000-0000-00005b86fcc4/00000000-0000-0000-0000-00002453ff74"
+      (reference "ZD18") (unit 1) (value "SLVU2.8-TP") (footprint "EEZ PSU consolidated r5B13a:SOT23")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-0000816ad438"
+      (reference "#+3V02") (unit 1) (value "+3V3") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-00007bd3a1ae"
+      (reference "#+3V08") (unit 1) (value "+3V3") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-00004a62666f"
+      (reference "#+3V09") (unit 1) (value "+3V3") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-0000ead11afe"
+      (reference "#FRAME8") (unit 1) (value "DINA4_L") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-0000f3d13277"
+      (reference "#P+023") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-000026131af3"
+      (reference "#P+024") (unit 1) (value "VCC") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-000016436b6d"
+      (reference "#SUPPLY059") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-00003bb7caa9"
+      (reference "#SUPPLY060") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-0000739efb96"
+      (reference "#SUPPLY071") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-00002d109582"
+      (reference "#SUPPLY072") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-0000d24849e4"
+      (reference "#SUPPLY073") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-00003c512daf"
+      (reference "#SUPPLY074") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-000091a3ac66"
+      (reference "#SUPPLY075") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-00004ef46f42"
+      (reference "#SUPPLY076") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-0000ea78e503"
+      (reference "#SUPPLY077") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-0000e788e7ca"
+      (reference "#SUPPLY078") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-0000cb1ac78b"
+      (reference "#SUPPLY080") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-00009e4019f2"
+      (reference "#SUPPLY087") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-000059659cba"
+      (reference "#SUPPLY093") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-0000d77ae8e8"
+      (reference "#SUPPLY095") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-00007346883d"
+      (reference "C97") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-0000943ec404"
+      (reference "C98") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-0000fc3e0017"
+      (reference "C99") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-000078fb91f5"
+      (reference "C100") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-0000907db711"
+      (reference "C101") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-00005504e658"
+      (reference "C102") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-0000545840a3"
+      (reference "C103") (unit 1) (value "47u") (footprint "EEZ PSU consolidated r5B13a:CAPAE660X610N")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-0000148a259c"
+      (reference "C104") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-000025b9e12b"
+      (reference "C105") (unit 1) (value "10u") (footprint "EEZ PSU consolidated r5B13a:EC1206")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-0000b59270d5"
+      (reference "C106") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-0000e278c145"
+      (reference "C107") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-000010bf0990"
+      (reference "D17") (unit 1) (value "SMBJ5.0A-TR") (footprint "EEZ PSU consolidated r5B13a:DO214AA")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-0000423c60e2"
+      (reference "IC19") (unit 1) (value "Si8641EC-B-IS1") (footprint "EEZ PSU consolidated r5B13a:SOIC-16")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-0000a6f2fb68"
+      (reference "IC20") (unit 1) (value "SI8651EC-B-IS1") (footprint "EEZ PSU consolidated r5B13a:SOIC-16")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-00005b393c38"
+      (reference "IC21") (unit 1) (value "SI8651EC-B-IS1") (footprint "EEZ PSU consolidated r5B13a:SOIC-16")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-00007eaf38f5"
+      (reference "IC22") (unit 1) (value "LD1117ADT33TR") (footprint "EEZ PSU consolidated r5B13a:SOT223")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-000050c5bd01"
+      (reference "IC23") (unit 1) (value "Si8641EC-B-IS1") (footprint "EEZ PSU consolidated r5B13a:SOIC-16")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-000038e59275"
+      (reference "MCU1") (unit 1) (value "Arduino Due") (footprint "EEZ PSU consolidated r5B13a:ARDUINO+ICSP_MIRROR")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-000038e59279"
+      (reference "MCU1") (unit 2) (value "Arduino Due") (footprint "EEZ PSU consolidated r5B13a:ARDUINO+ICSP_MIRROR")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-000038e5927d"
+      (reference "MCU1") (unit 3) (value "Arduino Due") (footprint "EEZ PSU consolidated r5B13a:ARDUINO+ICSP_MIRROR")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-000038e59261"
+      (reference "MCU1") (unit 4) (value "Arduino Due") (footprint "EEZ PSU consolidated r5B13a:ARDUINO+ICSP_MIRROR")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-000038e59265"
+      (reference "MCU1") (unit 5) (value "Arduino Due") (footprint "EEZ PSU consolidated r5B13a:ARDUINO+ICSP_MIRROR")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-000038e59269"
+      (reference "MCU1") (unit 6) (value "Arduino Due") (footprint "EEZ PSU consolidated r5B13a:ARDUINO+ICSP_MIRROR")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-000038e5926d"
+      (reference "MCU1") (unit 7) (value "Arduino Due") (footprint "EEZ PSU consolidated r5B13a:ARDUINO+ICSP_MIRROR")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-000038e59251"
+      (reference "MCU1") (unit 8) (value "Arduino Due") (footprint "EEZ PSU consolidated r5B13a:ARDUINO+ICSP_MIRROR")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-00005427593f"
+      (reference "SW1") (unit 1) (value "A101SYCQ04") (footprint "EEZ PSU consolidated r5B13a:M9040P")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-000089f53a06"
+      (reference "X13") (unit 1) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-000089f53a0a"
+      (reference "X13") (unit 2) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-000089f53a0e"
+      (reference "X13") (unit 3) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-000089f53a12"
+      (reference "X13") (unit 4) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-000089f53a16"
+      (reference "X13") (unit 5) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-000089f53a1a"
+      (reference "X13") (unit 6) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-000089f53a1e"
+      (reference "X13") (unit 7) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-000089f53a22"
+      (reference "X13") (unit 8) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-000089f53a26"
+      (reference "X13") (unit 9) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-000089f53a2a"
+      (reference "X13") (unit 10) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-000089f53a32"
+      (reference "X13") (unit 12) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-000089f53a3a"
+      (reference "X13") (unit 14) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-000089f53a42"
+      (reference "X13") (unit 16) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-0000a188a0a9"
+      (reference "X15") (unit 1) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-0000a188a0a5"
+      (reference "X15") (unit 2) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-0000a188a0a1"
+      (reference "X15") (unit 3) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-0000a188a0bd"
+      (reference "X15") (unit 4) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-0000a188a0b9"
+      (reference "X15") (unit 5) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-0000a188a0b5"
+      (reference "X15") (unit 6) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-0000a188a0b1"
+      (reference "X15") (unit 7) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-0000a188a08d"
+      (reference "X15") (unit 8) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-0000a188a089"
+      (reference "X15") (unit 9) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-0000a188a085"
+      (reference "X15") (unit 10) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-0000a188a09d"
+      (reference "X15") (unit 12) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-0000a188a095"
+      (reference "X15") (unit 14) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-0000a188a0ed"
+      (reference "X15") (unit 16) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-0000bb9d6a3e"
+      (reference "X16") (unit 1) (value "09185067324") (footprint "EEZ PSU consolidated r5B13a:IDC-10PIN")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-0000bb9d6a32"
+      (reference "X16") (unit 2) (value "09185067324") (footprint "EEZ PSU consolidated r5B13a:IDC-10PIN")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-0000bb9d6a36"
+      (reference "X16") (unit 3) (value "09185067324") (footprint "EEZ PSU consolidated r5B13a:IDC-10PIN")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-0000bb9d6a2a"
+      (reference "X16") (unit 4) (value "09185067324") (footprint "EEZ PSU consolidated r5B13a:IDC-10PIN")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-0000bb9d6a2e"
+      (reference "X16") (unit 5) (value "09185067324") (footprint "EEZ PSU consolidated r5B13a:IDC-10PIN")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-0000bb9d6a22"
+      (reference "X16") (unit 6) (value "09185067324") (footprint "EEZ PSU consolidated r5B13a:IDC-10PIN")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-0000bb9d6a1a"
+      (reference "X16") (unit 8) (value "09185067324") (footprint "EEZ PSU consolidated r5B13a:IDC-10PIN")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-0000bb9d6a1e"
+      (reference "X16") (unit 9) (value "09185067324") (footprint "EEZ PSU consolidated r5B13a:IDC-10PIN")
+    )
+    (path "/00000000-0000-0000-0000-00005b8711c3/00000000-0000-0000-0000-0000bb9d6a12"
+      (reference "X16") (unit 10) (value "09185067324") (footprint "EEZ PSU consolidated r5B13a:IDC-10PIN")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-0000d3799fdf"
+      (reference "#FRAME5") (unit 1) (value "DINA4_L") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-000057f4dc09"
+      (reference "#P+05") (unit 1) (value "V+") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-00001a067fb7"
+      (reference "#P+013") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-00004ff0227b"
+      (reference "#P+018") (unit 1) (value "V+") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-00000d5c7d76"
+      (reference "#P+030") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-00000d6e2306"
+      (reference "#P+031") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-00001dc4e20e"
+      (reference "#P-05") (unit 1) (value "V-") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-00001696430b"
+      (reference "#P-06") (unit 1) (value "V-") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-0000b3b18c92"
+      (reference "#SUPPLY01") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-00008dd55ab9"
+      (reference "#SUPPLY026") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-00008565e455"
+      (reference "#SUPPLY033") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-000080e55a4c"
+      (reference "#SUPPLY035") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-0000a51fb1bc"
+      (reference "#SUPPLY036") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-00008d45b8a5"
+      (reference "C70") (unit 1) (value "10n") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-00003ceb0d3b"
+      (reference "C71") (unit 1) (value "2n2") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-0000d56a278d"
+      (reference "C72") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-00004da409fc"
+      (reference "C73") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-00000498734a"
+      (reference "C74") (unit 1) (value "10n") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-0000aa6c0e5f"
+      (reference "IC14") (unit 1) (value "LP339D") (footprint "EEZ PSU consolidated r5B13a:SOIC127P600X175-14N")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-0000aa6c0e53"
+      (reference "IC14") (unit 2) (value "LP339D") (footprint "EEZ PSU consolidated r5B13a:SOIC127P600X175-14N")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-0000aa6c0e57"
+      (reference "IC14") (unit 3) (value "LP339D") (footprint "EEZ PSU consolidated r5B13a:SOIC127P600X175-14N")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-0000aa6c0e4b"
+      (reference "IC14") (unit 4) (value "LP339D") (footprint "EEZ PSU consolidated r5B13a:SOIC127P600X175-14N")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-0000aa6c0e4f"
+      (reference "IC14") (unit 5) (value "LP339D") (footprint "EEZ PSU consolidated r5B13a:SOIC127P600X175-14N")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-00009818507b"
+      (reference "Q17") (unit 1) (value "MMBT5551") (footprint "EEZ PSU consolidated r5B13a:SOT23-BEC")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-0000785d968b"
+      (reference "Q18") (unit 1) (value "MMBT5401") (footprint "EEZ PSU consolidated r5B13a:SOT23-BEC")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-0000855b551a"
+      (reference "Q19") (unit 1) (value "MMBT5551") (footprint "EEZ PSU consolidated r5B13a:SOT23-BEC")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-0000b78c73ee"
+      (reference "Q20") (unit 1) (value "MMBT5551") (footprint "EEZ PSU consolidated r5B13a:SOT23-BEC")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-0000833542cf"
+      (reference "R82") (unit 1) (value "10K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-00006ece3ebb"
+      (reference "R83") (unit 1) (value "330R") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-00004b2e2211"
+      (reference "R84") (unit 1) (value "5K1") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-00008d27caf0"
+      (reference "R85") (unit 1) (value "47K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-0000e6f57e3a"
+      (reference "R86") (unit 1) (value "47K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-0000d842d756"
+      (reference "R87") (unit 1) (value "47K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-00007a2686d0"
+      (reference "R88") (unit 1) (value "5K6") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-00003d7a8c6c"
+      (reference "R89") (unit 1) (value "750R") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-000091b5b65e"
+      (reference "R90") (unit 1) (value "2K2") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-000084c96def"
+      (reference "R91") (unit 1) (value "10K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-0000dda79c74"
+      (reference "R92") (unit 1) (value "1K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-000018c871d4"
+      (reference "R93") (unit 1) (value "2K2") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-000039937a76"
+      (reference "R94") (unit 1) (value "10K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-0000dbf7c3ad"
+      (reference "R95") (unit 1) (value "10K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-0000e227b9ce"
+      (reference "R96") (unit 1) (value "750R") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-0000f5a6d381"
+      (reference "R97") (unit 1) (value "5K1") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-0000937924bb"
+      (reference "R98") (unit 1) (value "10K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-00006c1b4d68"
+      (reference "R99") (unit 1) (value "5K6") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-0000d029c05c"
+      (reference "R100") (unit 1) (value "47K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-0000cc688f37"
+      (reference "R101") (unit 1) (value "330R") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b870139/00000000-0000-0000-0000-0000f7803c1f"
+      (reference "R102") (unit 1) (value "10K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-00007d977a11"
+      (reference "#+3V01") (unit 1) (value "+3V3") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000eb5f8c4a"
+      (reference "#+3V03") (unit 1) (value "+3V3") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-00003511c8a8"
+      (reference "#+3V04") (unit 1) (value "+3V3") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-000054464806"
+      (reference "#+3V05") (unit 1) (value "+3V3") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000ae02f8ca"
+      (reference "#+3V013") (unit 1) (value "+3V3") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-000004853d9a"
+      (reference "#+3V014") (unit 1) (value "+3V3") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-00005dea040e"
+      (reference "#+3V016") (unit 1) (value "+3V3") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-00006fc82a7f"
+      (reference "#+3V017") (unit 1) (value "+3V3") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000a02c8e50"
+      (reference "#+3V018") (unit 1) (value "+3V3") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-000062abb4ea"
+      (reference "#+3V023") (unit 1) (value "+3V3") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-00009e827e61"
+      (reference "#FRAME10") (unit 1) (value "DINA4_L") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-00008da2bb24"
+      (reference "#GND01") (unit 1) (value "GNDA") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-00004877c9e2"
+      (reference "#GND02") (unit 1) (value "GNDA") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-000021137572"
+      (reference "#GND03") (unit 1) (value "GNDA") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000f90aba34"
+      (reference "#P+025") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000f0cd002f"
+      (reference "#SUPPLY069") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-00000fb42d68"
+      (reference "#SUPPLY081") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000506d5220"
+      (reference "#SUPPLY082") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000b5055573"
+      (reference "#SUPPLY083") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000d76666c4"
+      (reference "#SUPPLY084") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000dcd2e9ab"
+      (reference "#SUPPLY085") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-000034042f67"
+      (reference "#SUPPLY086") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-000025ea5765"
+      (reference "#SUPPLY091") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000852f8931"
+      (reference "#SUPPLY097") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-000079614484"
+      (reference "#SUPPLY098") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-000028d6cd94"
+      (reference "#SUPPLY0106") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000f39e81cf"
+      (reference "#SUPPLY0107") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000a8edd000"
+      (reference "#SUPPLY0108") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-000075b633ec"
+      (reference "#SUPPLY0109") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-00003f45c7db"
+      (reference "#SUPPLY0110") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000059b7ed1"
+      (reference "#SUPPLY0111") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-00005b885694"
+      (reference "#SUPPLY0117") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-00009cdf8123"
+      (reference "C108") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000382146ea"
+      (reference "C109") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-00009c377ae7"
+      (reference "C110") (unit 1) (value "10u") (footprint "EEZ PSU consolidated r5B13a:C1210")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-00003a464919"
+      (reference "C111") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000430e7ecc"
+      (reference "C112") (unit 1) (value "EECS5R5H105") (footprint "EEZ PSU consolidated r5B13a:SG-R20MM")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-000044f75243"
+      (reference "C113") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-000098e95d18"
+      (reference "C114") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000284aefdc"
+      (reference "C115") (unit 1) (value "22n") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000a096f6cf"
+      (reference "C116") (unit 1) (value "18p") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-00005771df73"
+      (reference "C117") (unit 1) (value "6n8") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-00004747fef7"
+      (reference "C118") (unit 1) (value "10n") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000bb7e6586"
+      (reference "C119") (unit 1) (value "6n8") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-00009dddb525"
+      (reference "C120") (unit 1) (value "18p") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-00006da49c0d"
+      (reference "C121") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000476ab021"
+      (reference "C122") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-00000e4d5a9f"
+      (reference "C123") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-00001b02bffc"
+      (reference "C124") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000b74bb10e"
+      (reference "C125") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-000031be1853"
+      (reference "C126") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-00008d62675d"
+      (reference "C127") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000d8cb4e4a"
+      (reference "C128") (unit 1) (value "100n") (footprint "EEZ PSU consolidated r5B13a:C0603")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-000049dd5f01"
+      (reference "C129") (unit 1) (value "10u") (footprint "EEZ PSU consolidated r5B13a:EC1206")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000e7304fe7"
+      (reference "C130") (unit 1) (value "4u7") (footprint "EEZ PSU consolidated r5B13a:EC1206")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000136a0f4a"
+      (reference "C131") (unit 1) (value "10n") (footprint "EEZ PSU consolidated r5B13a:C0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-000015d816e0"
+      (reference "D18") (unit 1) (value "BAS316") (footprint "EEZ PSU consolidated r5B13a:SOD323-W")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000460000d5"
+      (reference "IC24") (unit 1) (value "PCA21125T/Q900/1,1") (footprint "EEZ PSU consolidated r5B13a:SOP65P640X120-14N")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-000030602457"
+      (reference "IC25") (unit 1) (value "AT25256B-SSHL-B") (footprint "EEZ PSU consolidated r5B13a:SOIC127P600X175-8N")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000694a8893"
+      (reference "IC26") (unit 1) (value "W5500") (footprint "EEZ PSU consolidated r5B13a:TQFP48-7X7")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000193933ab"
+      (reference "JP4") (unit 1) (value "JP3-CUT") (footprint "EEZ PSU consolidated r5B13a:JP3-CUT")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000fd8aa809"
+      (reference "LCD1") (unit 1) (value "TFT_320QVT") (footprint "EEZ PSU consolidated r5B13a:LCD_TFT_9341_MIRROR")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000deda13f4"
+      (reference "Q30") (unit 1) (value "2N7002") (footprint "EEZ PSU consolidated r5B13a:SOT103P240X110-3N")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-000093f5e937"
+      (reference "Q31") (unit 1) (value "IRLML2246TRPBF") (footprint "EEZ PSU consolidated r5B13a:SOT95P237X112-3N")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-00004c71699d"
+      (reference "R133") (unit 1) (value "4K7") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000737eaa82"
+      (reference "R134") (unit 1) (value "180R") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-000023e059d6"
+      (reference "R135") (unit 1) (value "100K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-000076239d8c"
+      (reference "R136") (unit 1) (value "4K7") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000a32c8897"
+      (reference "R137") (unit 1) (value "4K7") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-000092969460"
+      (reference "R138") (unit 1) (value "49R9") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000a1b87a46"
+      (reference "R139") (unit 1) (value "10K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-000048d9cd0d"
+      (reference "R140") (unit 1) (value "49R9") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000ed1abf5c"
+      (reference "R141") (unit 1) (value "49R9") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000da051c84"
+      (reference "R142") (unit 1) (value "49R9") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-000041cd4099"
+      (reference "R143") (unit 1) (value "10R") (footprint "EEZ PSU consolidated r5B13a:R1206")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-00007c922ffd"
+      (reference "R144") (unit 1) (value "12K4") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000e5c469b2"
+      (reference "R145") (unit 1) (value "10K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-000036ca376e"
+      (reference "R146") (unit 1) (value "100K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000c24477a8"
+      (reference "R147") (unit 1) (value "180R") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-00006567c5bf"
+      (reference "R148") (unit 1) (value "180R") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000d7375a4c"
+      (reference "R149") (unit 1) (value "10K") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000ed3ca2a5"
+      (reference "R176") (unit 1) (value "1M") (footprint "EEZ PSU consolidated r5B13a:R0805")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000374665fb"
+      (reference "RN1") (unit 1) (value "4x10K") (footprint "EEZ PSU consolidated r5B13a:CAY16")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000374665f7"
+      (reference "RN1") (unit 2) (value "4x10K") (footprint "EEZ PSU consolidated r5B13a:CAY16")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000374665f3"
+      (reference "RN1") (unit 3) (value "4x10K") (footprint "EEZ PSU consolidated r5B13a:CAY16")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000374665ef"
+      (reference "RN1") (unit 4) (value "4x10K") (footprint "EEZ PSU consolidated r5B13a:CAY16")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-00000eaf510d"
+      (reference "RN2") (unit 1) (value "4x10K") (footprint "EEZ PSU consolidated r5B13a:CAY16")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-00000eaf5101"
+      (reference "RN2") (unit 2) (value "4x10K") (footprint "EEZ PSU consolidated r5B13a:CAY16")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-00000eaf5105"
+      (reference "RN2") (unit 3) (value "4x10K") (footprint "EEZ PSU consolidated r5B13a:CAY16")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-00000eaf5119"
+      (reference "RN2") (unit 4) (value "4x10K") (footprint "EEZ PSU consolidated r5B13a:CAY16")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000cd25553d"
+      (reference "SH3") (unit 1) (value "SHORTNOHOLE") (footprint "EEZ PSU consolidated r5B13a:SHORT_NOHOLE")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000f99d3381"
+      (reference "SP1") (unit 1) (value "LD-BZEN-0903") (footprint "EEZ PSU consolidated r5B13a:LD-BZEN-0903")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-000089f53a36"
+      (reference "X13") (unit 13) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000a188a099"
+      (reference "X15") (unit 13) (value "TSW-113-07-F-D") (footprint "EEZ PSU consolidated r5B13a:TSW-113-07-F-D")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000dd509a91"
+      (reference "X17") (unit 1) (value "22-23-2021") (footprint "EEZ PSU consolidated r5B13a:22-23-2021")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000dd509a9d"
+      (reference "X17") (unit 2) (value "22-23-2021") (footprint "EEZ PSU consolidated r5B13a:22-23-2021")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000b97b101f"
+      (reference "X18") (unit 1) (value "MC34753") (footprint "EEZ PSU consolidated r5B13a:HEADER_8-PIN")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000b97b1013"
+      (reference "X18") (unit 2) (value "MC34753") (footprint "EEZ PSU consolidated r5B13a:HEADER_8-PIN")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000b97b1017"
+      (reference "X18") (unit 3) (value "MC34753") (footprint "EEZ PSU consolidated r5B13a:HEADER_8-PIN")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000b97b100b"
+      (reference "X18") (unit 4) (value "MC34753") (footprint "EEZ PSU consolidated r5B13a:HEADER_8-PIN")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000b97b100f"
+      (reference "X18") (unit 5) (value "MC34753") (footprint "EEZ PSU consolidated r5B13a:HEADER_8-PIN")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000b97b1003"
+      (reference "X18") (unit 6) (value "MC34753") (footprint "EEZ PSU consolidated r5B13a:HEADER_8-PIN")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000b97b1007"
+      (reference "X18") (unit 7) (value "MC34753") (footprint "EEZ PSU consolidated r5B13a:HEADER_8-PIN")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-0000b97b103b"
+      (reference "X18") (unit 8) (value "MC34753") (footprint "EEZ PSU consolidated r5B13a:HEADER_8-PIN")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-00007d89e2d8"
+      (reference "Y1") (unit 1) (value "32.768kHz") (footprint "EEZ PSU consolidated r5B13a:R26_XTAL")
+    )
+    (path "/00000000-0000-0000-0000-00005b871692/00000000-0000-0000-0000-00005e2e8076"
+      (reference "Y2") (unit 1) (value "25MHz") (footprint "EEZ PSU consolidated r5B13a:HC-49_4H")
+    )
+  )
+)
